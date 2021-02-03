@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dmarget/Downloads/miniRT-new/libft/libft.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+unistd.h
+-
+
+/Users/dmarget/Downloads/miniRT-new/minirt.h
+mlx/mlx.h
+/Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+stdio.h
+-
+libft/libft.h
+/Users/dmarget/Downloads/miniRT-new/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+-
+math.h
+-
+
+/Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+
+/Users/dmarget/Downloads/miniRT-new/put.c
+minirt.h
+/Users/dmarget/Downloads/miniRT-new/minirt.h
+
