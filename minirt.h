@@ -82,13 +82,6 @@ typedef struct  s_range
 	double      min;
 	double      max;
 }               t_range;
-typedef struct  s_pixel
-{
-	double          t;
-	t_color          rgb;
-	t_vec           normal;
-	int             id;
-}               t_pixel;
 typedef struct		s_objects
 {
 	int				id;
@@ -118,7 +111,7 @@ typedef struct		s_mini_rt
 	double			t_max;
 	double 			result;
 	t_vec 			n;
-	int 			n_id;
+	double 			n_id;
 	t_vec 			p;
 	t_obj			*main;
 	t_list			*list_obj;

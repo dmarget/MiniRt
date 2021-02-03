@@ -274,8 +274,6 @@ void            ft_parser_rt(char *line,t_mini_rt *rt)
 //	rt = malloc(sizeof(t_mini_rt));
 //	nul_setup(rt);
 	rt->i = 0;
-	while (!ft_isalpha(line[rt->i]))
-		rt->i++;
 	ft_parse_line(line,rt);
 }
 void        	ft_make_file(t_list **list, int size,t_mini_rt *rt)

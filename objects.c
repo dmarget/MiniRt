@@ -27,7 +27,7 @@ double  sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir)
 	eq.k3 = dot_vec(eq.res,eq.res) - ((tmp->d/2)*(tmp->d/2));
 	eq.D = eq.k2 * eq.k2 - 4 * eq.k1 * eq.k3;
 	if (eq.D < 0)
-		rt->result = 0;
+		return 0;
 	eq.t1 = (-eq.k2 + sqrt(eq.D)) / (2*eq.k1);
 	eq.t2 = (-eq.k2 - sqrt(eq.D)) / (2*eq.k1);
 	if(eq.t1 > eq.t2 && eq.t2 > 0)
