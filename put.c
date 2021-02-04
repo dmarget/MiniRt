@@ -48,43 +48,77 @@ void        normal(t_mini_rt *rt, t_obj *ptr_sp)
 	rt->n = sub_vec(ptr_sp->vec, rt->p);
 	rt->n = vec_normalize(rt->n);
 }
+//static void	ft_init_mpn(t_rtam_cy *rt, t_cylinder *cy, double t)
+//{
+//	rt->m = ft_xyz_scal(rt->d, cy->normal) * t +
+//			 ft_xyz_scal(rt->oc, cy->normal);
+//	rt->p = ft_xyz_plus(rt->o, ft_xyz_mult_db(rt->d, t * 0.999));
+//	rt->n = ft_xyz_minus(rt->p, rt->minp);
+//	rt->n = ft_xyz_minus(rt->n, ft_xyz_mult_db(cy->normal, rt->m));
+//	rt->n = ft_xyz_normalaze(rt->n);
+//}
 //void		normal_cy(t_mini_rt *rt,t_obj *obj)
 //{
-//	t_vec	pc;
-//	t_vec	vm;
-//	double	h;
+//	t_vec pc;
+//	t_vec vm;
+//	double h;
 //	double t;
 //	t = rt->t_min;
 //	obj->nvec = vec_normalize(obj->nvec);
-//	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
-//	pc = sub_vec(obj->vec,rt->p);
-//	vm = multi_vec(obj->nvec,rt->n_id);
-////	h = dot_vec(pc, obj->nvec);
-//	rt->n = vec_normalize(sub_vec(vm,pc));
-////	rt->n = sub_vec(pc, multi_vec(obj->nvec, h));
+//	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.9999));
+//	pc = sub_vec(obj->vec, rt->p);
+////	vm = multi_vec(obj->nvec, rt->n_id);
+//	h = dot_vec(pc, obj->nvec);
+////	rt->n = vec_normalize(sub_vec(vm, pc));
+//	rt->n = sub_vec(pc, multi_vec(obj->nvec, h));
 //}
-void		normal_cy(t_mini_rt *rt,t_obj *cy)
+void normal_cy(t_mini_rt *rt,t_obj *obj)
 {
-	t_vec pc;
-	double h;
+//	t_vec pc;
 	double t;
 	t = rt->t_min;
-	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
-	cy->nvec = vec_normalize(cy->nvec);
-	pc = sub_vec(rt->p,cy->vec);
-	h = dot_vec(pc,cy->nvec);
-	rt->n = sub_vec(multi_vec(cy->nvec,h),pc);
+	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.9999));
+	rt->pc = sub_vec(obj->vec,rt->p);
+	rt->n = sub_vec(multi_vec(obj->nvec,dot_vec(rt->pc,obj->nvec)),rt->pc);
+	rt->n = vec_normalize(rt->n);
+	rt->vn = obj->vec;
+	rt->vn_n = obj->d /2;
+	obj->flag = 1;
 }
-//t_vec			get_cy_normal(t_mini_rt *rt,t_obj cy)
+//void	normal_cy(t_mini_rt *rt,t_obj *obj)
 //{
-//	t_vec	pc;
-//	t_vec	n;
-//	double	h;
-//
-//	pc = sub_vec(cy.vec,rt->p);
-//	h = dot_vec(pc, cy.nvec);
-//	n = sub_vec(multi_vec(cy.nvec, h),pc);
-//	rt->n =  (vec_normalize(n));
+//	t_vec ps;
+//	obj->nvec = vec_normalize(obj->nvec);
+//	double t = rt->t_min;
+//	rt->m = dot_vec(rt->head, obj->nvec) * t +
+//		dot_vec(sub_vec(obj->vec,rt->tail), obj->nvec);
+//	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.999));
+////	rt->n = sub_vec(rt->p, rt->minp);
+//	rt->n = sub_vec(multi_vec(obj->nvec, rt->m),rt->n);
+//	rt->n = vec_normalize(rt->n);
+//}
+//void		normal_cy(t_mini_rt *rt,t_obj *obj)
+//{
+//	t_vec ps;
+//	t_vec normal = vec_normalize(obj->nvec);
+//	double t = rt->t_min;
+////	rt->p = (t_vec){0.0,0.0,0.0};
+//	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
+//	ps = sub_vec(obj->vec,rt->p);
+//	rt->n = sub_vec(multi_vec(normal,dot_vec(ps,normal)),ps);
+//	rt->n = vec_normalize(rt->n);
+//}
+//void		normal_cy(t_mini_rt *rt,t_obj *cy)
+//{
+//	t_vec pc;
+//	double h;
+//	double t;
+//	t = rt->t_min;
+//	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
+//	cy->nvec = vec_normalize(cy->nvec);
+//	pc = sub_vec(rt->p,cy->vec);
+//	h = dot_vec(pc,cy->nvec);
+//	rt->n = sub_vec(multi_vec(cy->nvec,h),pc);
 //}
 void        normal_plane(t_mini_rt *rt, t_obj *obj)
 {
@@ -93,7 +127,7 @@ void        normal_plane(t_mini_rt *rt, t_obj *obj)
 	rt->n = vec_normalize(obj->nvec);
 //	rt->n = obj->nvec;
 }
-static t_vec	quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc)
+t_vec	quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc)
 {
 	t_equeal eq;
 	t_vec	t;
@@ -137,11 +171,12 @@ static t_vec	quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc)
 //	t.y = (-eq.k2 - sqrt(eq.D)) / (2 * eq.k1);
 //	return (t);
 //}
-double			intersect_cylinder(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d)
+double			cylinder_equal(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d)
 {
 	t_vec t;
 	t_vec p[2];
 	double h[2];
+	double res = INFINITY;
 	t_vec oc;
 	cy->nvec = vec_normalize(cy->nvec);
 	oc = sub_vec(cy->vec, o);
@@ -152,18 +187,18 @@ double			intersect_cylinder(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d)
 	h[0] = dot_vec(cy->nvec, sub_vec(cy->vec, p[0]));
 	p[1] = sum_vec(o, multi_vec(d, t.y));
 	h[1] = dot_vec(cy->nvec, sub_vec(cy->vec, p[1]));
-	if (-cy->h / 2 <= h[0] && h[0] <= cy->h / 2 && t.x > 0.001)
-		return t.x;
-	if (-cy->h / 2 <= h[1] && h[1] <= cy->h / 2 && t.y > 0.001)
-		return t.y;
-	return(INFINITY);
+	if (-cy->h / 2 <= h[0] && h[0] <= cy->h / 2 && t.x > 0.00001)
+		res =  t.x;
+	if (-cy->h / 2 <= h[1] && h[1] <= cy->h / 2 && t.x > 0.00001)
+		res =  t.y;
+	return(res);
 }
 void	find_normal(t_mini_rt *rt,t_obj *obj)
 {
-	if(obj->id == 1)
-		normal(rt,obj);
 	if(obj->id == 2)
 		normal_plane(rt,obj);
+	if(obj->id == 1)
+		normal(rt,obj);
 	if(obj->id == 3)
 		normal_plane(rt,obj);
 	if(obj->id == 4)
@@ -171,22 +206,16 @@ void	find_normal(t_mini_rt *rt,t_obj *obj)
 	if(obj->id == 5)
 		normal_plane(rt,obj);
 }
-
-//double 	find_objs(t_mini_rt *rt, t_obj *obj,t_vec tail,t_vec dir)
-//{
-//	double t;
-//	if (obj->id == 1)
-//		t = sphere_equal(rt, obj,tail,dir);
-//	if(obj->id == 2)
-//		t = plane_equal(rt,obj,tail,dir);
-//	if(obj->id == 3)
-//		t = square_equal(rt,obj,tail,dir);
-////	if(obj->id == 4)
-////		cylinder(rt,obj,tail,dir);
-//	if(obj->id == 5)
-//		t = triangle_equal(rt,obj,tail,dir);
-//	return (t);
-//}
+int revers_normal(t_mini_rt *rt)
+{
+	double x = rt->tail.x - rt->vn.x;
+	double y = rt->tail.y - rt->vn.y;
+	double z = rt->tail.z - rt->vn.z;
+	double t  = sqrt(pow(x,2) + pow(y,2) + pow(z,2));
+	if(t < rt->vn_n)
+		return (1);
+	return(0);
+}
 void inter_search(t_list *tmp,double t_max,t_mini_rt *rt,t_vec cam,t_vec dir)
 {
 	t_obj *obj;
@@ -200,11 +229,11 @@ void inter_search(t_list *tmp,double t_max,t_mini_rt *rt,t_vec cam,t_vec dir)
 		obj->id == 1 ? t = sphere_equal(rt,obj,cam,dir) : 0;
 		obj->id == 2 ? t = plane_equal(rt,obj,cam,dir) : 0;
 		obj->id == 3 ? t = square_equal(rt,obj,cam,dir) : 0;
-		obj->id == 4 ? t = intersect_cylinder(rt,obj,cam,dir) : 0;
+		obj->id == 4 ? t = cylinder_equal(rt,obj,cam,dir) : 0;
 		obj->id == 5 ? t = triangle_equal(rt,obj,cam,dir) : 0;
 		if (t > 0.00001 && t < rt->t_min && t < t_max)
 		{
-			rt->t_min = t * 0.9999;
+			rt->t_min = t;// * 0.9999;
 			rt->main = obj;
 		}
 		tmp = tmp->next;
@@ -259,6 +288,10 @@ void inter_search(t_list *tmp,double t_max,t_mini_rt *rt,t_vec cam,t_vec dir)
 //	return (res);
 //}
 //Рабочий свет ----------------
+//double revers_normal(t_mini_rt *rt,t_obj *obj)
+//{
+//	if( )
+//}
 t_color 			light_trace(t_list  *tmp,t_mini_rt *rt,t_vec p,t_vec N,t_obj *obj)
 {
 	t_list  *tmp_l;
@@ -270,18 +303,26 @@ t_color 			light_trace(t_list  *tmp,t_mini_rt *rt,t_vec p,t_vec N,t_obj *obj)
 	{
 		rt->intens = 0;
 		ptr_l = tmp_l->content;
-		inter_search(tmp,0.99999,rt, p, sub_vec(p, ptr_l->vec));
+		inter_search(tmp,0.9999,rt, p, sub_vec(p, ptr_l->vec));
 		v_dot = dot_vec(N, sub_vec(p, ptr_l->vec));
 		if(rt->main != NULL)
 		{
 			tmp_l = tmp_l->next;
 			continue ;
 		}
-		if (v_dot <= 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3 || obj->id == 4))
+		if (v_dot <= 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3))
 		{
 			N = multi_vec(N,-1.0);
 			v_dot = dot_vec(N,sub_vec(p, ptr_l->vec));
 		}
+//		if(len_vec(rt->pc) < rt->vn_n && obj->flag == 1)
+//		{
+//			v_dot *= -1;
+//			N = multi_vec(N, -1.0);
+//		}
+//		if((obj->id == 4 ) && dot_vec(N,sub_vec(p,ptr_l->vec)) < 0)
+//			if(revers_normal(rt))
+//				N = multi_vec(N,-1.0);
 		if (v_dot > 0.0)
 				rt->intens = ptr_l->range * dot_vec(N, sub_vec(p, ptr_l->vec)) /
 							 (len_vec(N) * len_vec(sub_vec(p, ptr_l->vec)));

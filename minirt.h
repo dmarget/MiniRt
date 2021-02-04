@@ -92,6 +92,7 @@ typedef struct		s_objects
 	double			h;
 	double			range;
 	t_color			color;
+	int				flag;
 }					t_obj;
 typedef struct		s_mini_rt
 {
@@ -107,10 +108,15 @@ typedef struct		s_mini_rt
 	t_vec			head;
 	t_vec			tail;
 	t_vec			dir;
+	t_vec			pc;
 	double			t_min;
 	double			t_max;
 	double 			result;
 	t_vec 			n;
+	double 			m;
+	t_vec 			vn;
+	double 			vn_n;
+	double			minp;
 	double 			n_id;
 	t_vec 			p;
 	t_obj			*main;
