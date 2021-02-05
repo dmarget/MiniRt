@@ -120,19 +120,19 @@ void normal_cy(t_mini_rt *rt,t_obj *obj)
 //	h = dot_vec(pc,cy->nvec);
 //	rt->n = sub_vec(multi_vec(cy->nvec,h),pc);
 //}
-t_vec			get_cy_normal(t_mini_rt *rt,t_obj *cy)
-{
-	t_vec	pc;
-	t_vec	n;
-	double	h;
-	double t;
-	t = rt->t_min;
-	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
-	pc = sub_vec(cy->vec,rt->p);
-	h = dot_vec(pc, cy->nvec);
-	n = sub_vec(multi_vec(cy->nvec, h),pc);
-	return (vec_normalize(n));
-}
+//t_vec			get_cy_normal(t_mini_rt *rt,t_obj *cy)
+//{
+//	t_vec	pc;
+//	t_vec	n;
+//	double	h;
+//	double t;
+//	t = rt->t_min;
+//	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
+//	pc = sub_vec(cy->vec,rt->p);
+//	h = dot_vec(pc, cy->nvec);
+//	n = sub_vec(multi_vec(cy->nvec, h),pc);
+//	return (vec_normalize(n));
+//}
 void        normal_plane(t_mini_rt *rt, t_obj *obj)
 {
 	double t = rt->t_min;
