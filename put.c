@@ -74,13 +74,13 @@ void        normal(t_mini_rt *rt, t_obj *ptr_sp)
 //}
 void normal_cy(t_mini_rt *rt,t_obj *obj)
 {
-//	t_vec pc;
+	t_vec pc;
 	double t;
 	t = rt->t_min;
 	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.9999));
 	rt->pc = sub_vec(obj->vec,rt->p);
 	rt->n = sub_vec(multi_vec(obj->nvec,dot_vec(rt->pc,obj->nvec)),rt->pc);
-	rt->n = vec_normalize(rt->n);
+	rt->n = multi_vec(vec_normalize(rt->n),-1);
 	rt->vn = obj->vec;
 	rt->vn_n = obj->d /2;
 	obj->flag = 1;
@@ -120,6 +120,19 @@ void normal_cy(t_mini_rt *rt,t_obj *obj)
 //	h = dot_vec(pc,cy->nvec);
 //	rt->n = sub_vec(multi_vec(cy->nvec,h),pc);
 //}
+t_vec			get_cy_normal(t_mini_rt *rt,t_obj *cy)
+{
+	t_vec	pc;
+	t_vec	n;
+	double	h;
+	double t;
+	t = rt->t_min;
+	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
+	pc = sub_vec(cy->vec,rt->p);
+	h = dot_vec(pc, cy->nvec);
+	n = sub_vec(multi_vec(cy->nvec, h),pc);
+	return (vec_normalize(n));
+}
 void        normal_plane(t_mini_rt *rt, t_obj *obj)
 {
 	double t = rt->t_min;
@@ -134,9 +147,9 @@ t_vec	quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc)
 	t_vec	h;
 	t_vec	och;
 	h = multi_vec(cy->nvec, dot_vec(d, cy->nvec));
-	h = sub_vec(h,d);
+	h = sub_vec(d,h);
 	och = multi_vec(cy->nvec, dot_vec(oc, cy->nvec));
-	och = sub_vec(och,oc);
+	och = sub_vec(oc,och);
 	eq.k1 = dot_vec(h, h);
 	eq.k2 = 2 * dot_vec(h, och);
 	eq.k3 = dot_vec(och, och) - pow(cy->d / 2, 2);
@@ -189,7 +202,7 @@ double			cylinder_equal(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d)
 	h[1] = dot_vec(cy->nvec, sub_vec(cy->vec, p[1]));
 	if (-cy->h / 2 <= h[0] && h[0] <= cy->h / 2 && t.x > 0.00001)
 		res =  t.x;
-	if (-cy->h / 2 <= h[1] && h[1] <= cy->h / 2 && t.x > 0.00001)
+	if (-cy->h / 2 <= h[1] && h[1] <= cy->h / 2 && t.y > 0.00001)
 		res =  t.y;
 	return(res);
 }
@@ -203,6 +216,7 @@ void	find_normal(t_mini_rt *rt,t_obj *obj)
 		normal_plane(rt,obj);
 	if(obj->id == 4)
 		normal_cy(rt,obj);
+//		get_cy_normal(rt,obj);
 	if(obj->id == 5)
 		normal_plane(rt,obj);
 }
@@ -310,16 +324,17 @@ t_color 			light_trace(t_list  *tmp,t_mini_rt *rt,t_vec p,t_vec N,t_obj *obj)
 			tmp_l = tmp_l->next;
 			continue ;
 		}
-		if (v_dot <= 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3))
+		if (v_dot < 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3))
 		{
 			N = multi_vec(N,-1.0);
 			v_dot = dot_vec(N,sub_vec(p, ptr_l->vec));
 		}
 //		if(len_vec(rt->pc) < rt->vn_n && obj->flag == 1)
-//		{
-//			v_dot *= -1;
-//			N = multi_vec(N, -1.0);
-//		}
+		if(obj->id == 4 && v_dot < 0)
+		{
+			v_dot *= -1;
+			N = multi_vec(N, -1.0);
+		}
 //		if((obj->id == 4 ) && dot_vec(N,sub_vec(p,ptr_l->vec)) < 0)
 //			if(revers_normal(rt))
 //				N = multi_vec(N,-1.0);
