@@ -364,7 +364,7 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
 	*(unsigned int*)dst = color;
 }
-int ft_exit(t_vars * vars)
+int ft_exit(t_mini_rt *rt)
 {
 	exit(0);
 }
@@ -416,9 +416,7 @@ int             ft_close(int keycode, t_mini_rt *rt)
 		exit(0);
 	}
 	else if(keycode == 48)
-	{
 		ft_change_cam(rt);
-	}
 	return(0);
 }
 //int change_cam(int keycode,t_mini_rt *rt)
@@ -441,7 +439,7 @@ int             ft_close(int keycode, t_mini_rt *rt)
 //}
 void             put_images(t_mini_rt *rt)
 {
-	t_vars vars;
+//	t_vars vars;
 //	t_data img;
 //	int x;
 //	int y = -rt->res.y/2;

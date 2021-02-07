@@ -131,12 +131,6 @@ typedef struct		s_mini_rt
 	t_list			*main_c;
 	t_list			*list_light;
 }					t_mini_rt;
-typedef struct s_vars
-{
-	void        *mlx;
-	void        *win;
-	t_mini_rt 		*rt;
-}				t_vars;
 t_vec				dot_matrix(t_vec r, t_vec u,t_vec n , t_vec d);
 t_vec				multi_vec(t_vec vec,double s);
 t_vec				vec_cross(t_vec one, t_vec two);
