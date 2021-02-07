@@ -399,8 +399,13 @@ int         main(int argc, char **argv)
 {
 	t_mini_rt   *rt;
 
-	rt = malloc(sizeof(t_mini_rt));
+//	t_img		*img;
 
+//	if (!(vars = malloc(sizeof(t_vars))))
+//		printf("Error_malloc");//чистить
+//	if (!(rt = malloc(sizeof(t_mini_rt))));
+	rt = malloc(sizeof(t_mini_rt));
+//		printf("Error_malloc");//чистить
 //	if (argc != 2 || ft_check_rt(argv[1]) == 1)
 //		ints_error();
 	nul_setup(rt);

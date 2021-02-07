@@ -29,6 +29,14 @@ typedef struct  s_data {
 	int				line_length;
 	int				endian;
 }					t_data;
+//typedef struct	s_vars
+//{
+//	t_data		img;
+//	void		*mlx;
+//	void		*win;
+//	void		*rt;
+//	int			bmp;
+//}				t_vars;
 typedef struct		s_color
 {
 	int 			r;
@@ -77,11 +85,6 @@ typedef struct		s_equeal
 	double			t1;
 	double			t2;
 }					t_equeal;
-typedef struct  s_range
-{
-	double      min;
-	double      max;
-}               t_range;
 typedef struct		s_objects
 {
 	int				id;
@@ -110,20 +113,21 @@ typedef struct		s_mini_rt
 	t_vec			dir;
 	t_vec			pc;
 	double			t_min;
-	double			t_max;
-	double 			result;
 	t_vec 			n;
-	double 			m;
 	t_vec 			vn;
 	double 			vn_n;
-	double			minp;
-	double 			n_id;
 	t_vec 			p;
 	t_obj			*main;
 	t_list			*list_obj;
 	t_list			*list_cam;
 	t_list			*list_light;
 }					t_mini_rt;
+typedef struct s_vars
+{
+	void        *mlx;
+	void        *win;
+	t_mini_rt 		*rt;
+}				t_vars;
 t_vec				dot_matrix(t_vec r, t_vec u,t_vec n , t_vec d);
 t_vec				multi_vec(t_vec vec,double s);
 t_vec				vec_cross(t_vec one, t_vec two);
@@ -139,9 +143,12 @@ t_color				color_dot(t_color color,double i);
 t_color				color_sum(t_color color1,t_color color2);
 t_color				color_dot_coe(t_color color1,t_color color2,double coe);
 t_color				color_double_coe(t_color color1,t_color color2,double coe);
+//int					main_cam(int key,t_mini_rt *rt,t_vars *var);
+//int					main_cam(int key,t_mini_rt *rt);
 void				main_cam(t_mini_rt *rt);
-void				ctv(t_mini_rt *rt, double x, double y);
 void				put_images(t_mini_rt *rt);
+//void				put_images(t_mini_rt *rt,t_vars *vars);
+void				ctv(t_mini_rt *rt, double x, double y);
 void				nul_setup(t_mini_rt *rt);
 int					ft_check_rt(char *argv);
 void				check_rgb(double *r,double *g,double *b);

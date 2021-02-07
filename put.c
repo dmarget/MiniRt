@@ -3,13 +3,13 @@
 //
 #include "minirt.h"
 
-void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
-{
-	char    *dst;
-
-	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
-	*(unsigned int*)dst = color;
-}
+//void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
+//{
+//	char    *dst;
+//
+//	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
+//	*(unsigned int*)dst = color;
+//}
 //double			light_trace(t_mini_rt *rt,t_vec p,t_vec N)
 //{
 //	t_list  *tmp_l;
@@ -74,7 +74,6 @@ void        normal(t_mini_rt *rt, t_obj *ptr_sp)
 //}
 void normal_cy(t_mini_rt *rt,t_obj *obj)
 {
-	t_vec pc;
 	double t;
 	t = rt->t_min;
 	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.9999));
@@ -216,7 +215,6 @@ void	find_normal(t_mini_rt *rt,t_obj *obj)
 		normal_plane(rt,obj);
 	if(obj->id == 4)
 		normal_cy(rt,obj);
-//		get_cy_normal(rt,obj);
 	if(obj->id == 5)
 		normal_plane(rt,obj);
 }
@@ -359,30 +357,57 @@ int         TraceRay(t_mini_rt *rt,t_vec cam,t_vec dir)
 	return (color);
 }
 // -------------------
+void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
+{
+	char	*dst;
+
+	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
+	*(unsigned int*)dst = color;
+}
+int ft_exit(t_vars * vars)
+{
+	exit(0);
+}
+int             ft_close(int keycode, t_vars *vars)
+{
+	if(keycode == 53)
+	{
+		mlx_destroy_window(vars->mlx, vars->win);
+		exit(0);
+	}
+}
 void             put_images(t_mini_rt *rt)
 {
-	void *mlx;
-	void *mlx_win;
+	t_vars vars;
+//	void *mlx;
+//	void *mlx_win;
 	t_data img;
 	int x;
 	int y = -rt->res.y/2;
-	mlx = mlx_init();
-	mlx_win = mlx_new_window(mlx, rt->res.x, rt->res.y, "FKMiniRT!");
-	img.img = mlx_new_image(mlx, rt->res.x, rt->res.y);
+	main_cam(rt);
+	vars.rt = rt;
+	vars.mlx = mlx_init();
+	vars.win = mlx_new_window(vars.mlx, rt->res.x, rt->res.y, "FKMiniRT!");
+	img.img = mlx_new_image(vars.mlx, rt->res.x, rt->res.y);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,&img.endian);
-	while (y < rt->res.y/2)
+	while (++y < rt->res.y/2 - 1)
 	{
 		x = -rt->res.x/2;
-		while (x < rt->res.x/2)
+		while (++x < rt->res.x/2 - 1)
 		{
-			main_cam(rt);
 			rt->head = cam_direction(rt,x,y);
-			mlx_pixel_put(mlx, mlx_win, rt->res.x/2 + x, rt->res.y/2 - y, TraceRay(rt,rt->tail,rt->head));
-			x++;
+//			mlx_pixel_put(mlx, mlx_win, rt->res.x/2 + x, rt->res.y/2 - y, TraceRay(rt,rt->tail,rt->head));
+			my_mlx_pixel_put(&img, rt->res.x/2 + x, rt->res.y/2 - y, TraceRay(rt,rt->tail,rt->head));
 		}
-		y++;
 	}
-	//mlx_put_image_to_window(mlx, mlx_win, img.img, 0, 0);
-	mlx_loop(mlx);
+//	mlx_put_image_to_window(var->mlx, var->win, var->img.img, 0, 0);
+	mlx_put_image_to_window(vars.mlx, vars.win, img.img, 0, 0);
+	mlx_hook(vars.win, 2, 1L<<0, ft_close, &vars);
+	mlx_hook(vars.win, 17, 0, ft_exit, &vars);
+//	mlx_loop_hook (mlx, main_cam,rt);
+//	mlx_key_hook(mlx,main_cam,&rt);
+//	mlx_hook(info.window, 17, 0, w_close, &info);
+//	mlx_key_hook(info.window, rerender, &info);
+	mlx_loop(vars.mlx);
 }
 
