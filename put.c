@@ -402,8 +402,9 @@ void            ft_change_cam(t_mini_rt *rt)
 {
 	mlx_clear_window(rt->mlx, rt->win);
 	if (rt->list_cam->next == NULL)
-		exit(0);
-	rt->list_cam = rt->list_cam->next;
+		rt->list_cam = rt->tmp;
+	else
+		rt->list_cam = rt->list_cam->next;
 	rt->main_c = rt->list_cam->content;
 	main_cam(rt);
 	render(rt);
@@ -443,6 +444,7 @@ void             put_images(t_mini_rt *rt)
 //	t_data img;
 //	int x;
 //	int y = -rt->res.y/2;
+	rt->tmp = rt->list_cam;
 	main_cam(rt);
 //	rt->rt = rt;
 	rt->mlx = mlx_init();

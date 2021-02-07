@@ -123,6 +123,7 @@ typedef struct		s_mini_rt
 	t_vec 			vn;
 	double 			vn_n;
 	t_vec 			p;
+	t_list			*tmp;
 	t_obj			*main;
 	t_list			*list_obj;
 	t_list			*list_cam;
