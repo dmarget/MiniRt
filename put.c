@@ -368,27 +368,23 @@ int ft_exit(t_vars * vars)
 {
 	exit(0);
 }
-int             ft_close(int keycode, t_vars *vars)
+//int		rerender(int key, t_info *info)
+//{
+//	if (key == 124)
+//		info->camera_number += 1;
+//	else if (key == 123)
+//		info->camera_number -= 1;
+//	else if (key == 53)
+//		exit(0);
+//	render(info->camera_number, info, 0);
+//	return (0);
+//}
+void render(t_mini_rt *rt)
 {
-	if(keycode == 53)
-	{
-		mlx_destroy_window(vars->mlx, vars->win);
-		exit(0);
-	}
-}
-void             put_images(t_mini_rt *rt)
-{
-	t_vars vars;
-//	void *mlx;
-//	void *mlx_win;
 	t_data img;
 	int x;
 	int y = -rt->res.y/2;
-	main_cam(rt);
-	vars.rt = rt;
-	vars.mlx = mlx_init();
-	vars.win = mlx_new_window(vars.mlx, rt->res.x, rt->res.y, "FKMiniRT!");
-	img.img = mlx_new_image(vars.mlx, rt->res.x, rt->res.y);
+	img.img = mlx_new_image(rt->mlx, rt->res.x, rt->res.y);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,&img.endian);
 	while (++y < rt->res.y/2 - 1)
 	{
@@ -400,14 +396,75 @@ void             put_images(t_mini_rt *rt)
 			my_mlx_pixel_put(&img, rt->res.x/2 + x, rt->res.y/2 - y, TraceRay(rt,rt->tail,rt->head));
 		}
 	}
-//	mlx_put_image_to_window(var->mlx, var->win, var->img.img, 0, 0);
-	mlx_put_image_to_window(vars.mlx, vars.win, img.img, 0, 0);
-	mlx_hook(vars.win, 2, 1L<<0, ft_close, &vars);
-	mlx_hook(vars.win, 17, 0, ft_exit, &vars);
-//	mlx_loop_hook (mlx, main_cam,rt);
-//	mlx_key_hook(mlx,main_cam,&rt);
-//	mlx_hook(info.window, 17, 0, w_close, &info);
-//	mlx_key_hook(info.window, rerender, &info);
-	mlx_loop(vars.mlx);
+	mlx_put_image_to_window(rt->mlx, rt->win, img.img, 0, 0);
+}
+void            ft_change_cam(t_mini_rt *rt)
+{
+	mlx_clear_window(rt->mlx, rt->win);
+	if (rt->list_cam->next == NULL)
+		exit(0);
+	rt->list_cam = rt->list_cam->next;
+	rt->main_c = rt->list_cam->content;
+	main_cam(rt);
+	render(rt);
+}
+int             ft_close(int keycode, t_mini_rt *rt)
+{
+	if(keycode == 53)
+	{
+		mlx_destroy_window(rt->mlx, rt->win);
+		exit(0);
+	}
+	else if(keycode == 48)
+	{
+		ft_change_cam(rt);
+	}
+	return(0);
+}
+//int change_cam(int keycode,t_mini_rt *rt)
+//{
+//	if(keycode == 48)
+//	{
+//		mlx_clear_window(rt->mlx, rt->win);
+//		if(rt->list_cam->next == NULL)
+//			exit(0);
+//		rt->list_cam = rt->list_cam->next;
+//		rt->main_c = rt->main_c->content;
+//		render(rt);
+//	}
+//	return(0);
+////	if (rt->cam->next == NULL)
+////		rt->cam->next = rt->tmp->content;
+////	rt->cam = rt->cam->next;
+////	rt->m_cam = rt->cam->content;
+////	ft_render(rt);
+//}
+void             put_images(t_mini_rt *rt)
+{
+	t_vars vars;
+//	t_data img;
+//	int x;
+//	int y = -rt->res.y/2;
+	main_cam(rt);
+//	rt->rt = rt;
+	rt->mlx = mlx_init();
+	rt->win = mlx_new_window(rt->mlx, rt->res.x, rt->res.y, "FKMiniRT!");
+//	img.img = mlx_new_image(rt->mlx, rt->res.x, rt->res.y);
+//	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,&img.endian);
+//	while (++y < rt->res.y/2 - 1)
+//	{
+//		x = -rt->res.x/2;
+//		while (++x < rt->res.x/2 - 1)
+//		{
+//			rt->head = cam_direction(rt,x,y);
+//			my_mlx_pixel_put(&img, rt->res.x/2 + x, rt->res.y/2 - y, TraceRay(rt,rt->tail,rt->head));
+//		}
+//	}
+//	mlx_put_image_to_window(rt->mlx, rt->win, img.img, 0, 0);
+	render(rt);
+	mlx_hook(rt->win, 2, 0, ft_close, rt);
+	mlx_hook(rt->win, 2, 0,	ft_close, rt);
+	mlx_hook(rt->win, 17, 0, ft_exit, rt);
+	mlx_loop(rt->mlx);
 }
 

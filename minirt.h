@@ -97,6 +97,12 @@ typedef struct		s_objects
 	t_color			color;
 	int				flag;
 }					t_obj;
+typedef struct 		s_clist
+{
+	void			*content;
+	struct s_clist	*next;
+	struct s_clist	*first;
+}					t_clist;
 typedef struct		s_mini_rt
 {
 	int             i;
@@ -120,6 +126,9 @@ typedef struct		s_mini_rt
 	t_obj			*main;
 	t_list			*list_obj;
 	t_list			*list_cam;
+	void        	*mlx;
+	void        	*win;
+	t_list			*main_c;
 	t_list			*list_light;
 }					t_mini_rt;
 typedef struct s_vars

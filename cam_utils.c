@@ -1,22 +1,12 @@
 #include "minirt.h"
 void main_cam(t_mini_rt *rt)
 {
-	t_list *tmp_cam = rt->list_cam;
-//	t_cam *ptr_cam = tmp_cam->content;
-//	while(tmp_cam)
-//	{
-//		t_list *tmp_cam = rt->list_cam;
-		t_cam *ptr_cam = tmp_cam->content;
-		rt->tail = ptr_cam->vec;
-		rt->dir = ptr_cam->nvec;
-		rt->fov = ptr_cam->FOV;
-//		if(key == 124)
-//			tmp_cam = tmp_cam->next;
-//		else if (key == 53)
-//			exit(0);
-//	}
-//	put_images(rt);
-//	render(info->camera_number, info, 0);
+	rt->main_c = rt->list_cam;
+//	t_list *tmp_cam = rt->list_cam;
+	t_cam *ptr_cam = rt->main_c->content;
+	rt->tail = ptr_cam->vec;
+	rt->dir = ptr_cam->nvec;
+	rt->fov = ptr_cam->FOV;
 	return ;
 }
 t_vec vector(double x,double y,int w,int h,double z)
