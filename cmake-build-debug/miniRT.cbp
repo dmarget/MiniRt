@@ -90,6 +90,9 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/convertors.c">
 			<Option target="miniRT"/>
 		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cylindr.c">
+			<Option target="miniRT"/>
+		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_printf.h">
 			<Option target="miniRT"/>
 		</Unit>
@@ -118,6 +121,9 @@
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/minirt.h">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/normal_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/objects.c">

@@ -21,6 +21,11 @@ CMakeFiles/miniRT.dir/convertors.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/convertors.c.o: ../minirt.h
 CMakeFiles/miniRT.dir/convertors.c.o: ../mlx/mlx.h
 
+CMakeFiles/miniRT.dir/cylindr.c.o: ../cylindr.c
+CMakeFiles/miniRT.dir/cylindr.c.o: ../libft/libft.h
+CMakeFiles/miniRT.dir/cylindr.c.o: ../minirt.h
+CMakeFiles/miniRT.dir/cylindr.c.o: ../mlx/mlx.h
+
 CMakeFiles/miniRT.dir/ft_ssplit.c.o: ../ft_ssplit.c
 CMakeFiles/miniRT.dir/ft_ssplit.c.o: ../libft/libft.h
 
@@ -36,6 +41,11 @@ CMakeFiles/miniRT.dir/math_utils.c.o: ../minirt.h
 CMakeFiles/miniRT.dir/math_utils.c.o: ../mlx/mlx.h
 
 CMakeFiles/miniRT.dir/miniRT.c.o: ../miniRT.c
+
+CMakeFiles/miniRT.dir/normal_utils.c.o: ../libft/libft.h
+CMakeFiles/miniRT.dir/normal_utils.c.o: ../minirt.h
+CMakeFiles/miniRT.dir/normal_utils.c.o: ../mlx/mlx.h
+CMakeFiles/miniRT.dir/normal_utils.c.o: ../normal_utils.c
 
 CMakeFiles/miniRT.dir/objects.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/objects.c.o: ../minirt.h

@@ -9,6 +9,17 @@ void main_cam(t_mini_rt *rt)
 	rt->fov = ptr_cam->FOV;
 	return ;
 }
+void            ft_change_cam(t_mini_rt *rt)
+{
+	mlx_clear_window(rt->mlx, rt->win);
+	if (rt->list_cam->next == NULL)
+		rt->list_cam = rt->tmp;
+	else
+		rt->list_cam = rt->list_cam->next;
+	rt->main_c = rt->list_cam->content;
+	main_cam(rt);
+	render(rt);
+}
 t_vec vector(double x,double y,int w,int h,double z)
 {
 	t_vec v;

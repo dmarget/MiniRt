@@ -7,6 +7,8 @@ add_executable(miniRT
         convertors.c
         ft_printf.h
         ft_ssplit.c
+        cylindr.c
+        normal_utils.c
         get_next_line.c
         objects.c
         get_next_line.h

@@ -21,6 +21,11 @@ CMakeFiles/miniRT.dir/convertors.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+CMakeFiles/miniRT.dir/cylindr.c.o
+ /Users/dmarget/Downloads/miniRT-new/cylindr.c
+ /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minirt.h
+ /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/ft_ssplit.c.o
  /Users/dmarget/Downloads/miniRT-new/ft_ssplit.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
@@ -37,6 +42,11 @@ CMakeFiles/miniRT.dir/math_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/miniRT.c.o
  /Users/dmarget/Downloads/miniRT-new/miniRT.c
+CMakeFiles/miniRT.dir/normal_utils.c.o
+ /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minirt.h
+ /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+ /Users/dmarget/Downloads/miniRT-new/normal_utils.c
 CMakeFiles/miniRT.dir/objects.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h

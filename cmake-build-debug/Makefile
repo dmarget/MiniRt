@@ -251,6 +251,33 @@ convertors.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/convertors.c.s
 .PHONY : convertors.c.s
 
+cylindr.o: cylindr.c.o
+
+.PHONY : cylindr.o
+
+# target to build an object file
+cylindr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.o
+.PHONY : cylindr.c.o
+
+cylindr.i: cylindr.c.i
+
+.PHONY : cylindr.i
+
+# target to preprocess a source file
+cylindr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.i
+.PHONY : cylindr.c.i
+
+cylindr.s: cylindr.c.s
+
+.PHONY : cylindr.s
+
+# target to generate assembly for a file
+cylindr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.s
+.PHONY : cylindr.c.s
+
 ft_ssplit.o: ft_ssplit.c.o
 
 .PHONY : ft_ssplit.o
@@ -386,6 +413,33 @@ miniRT.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/miniRT.c.s
 .PHONY : miniRT.c.s
 
+normal_utils.o: normal_utils.c.o
+
+.PHONY : normal_utils.o
+
+# target to build an object file
+normal_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.o
+.PHONY : normal_utils.c.o
+
+normal_utils.i: normal_utils.c.i
+
+.PHONY : normal_utils.i
+
+# target to preprocess a source file
+normal_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.i
+.PHONY : normal_utils.c.i
+
+normal_utils.s: normal_utils.c.s
+
+.PHONY : normal_utils.s
+
+# target to generate assembly for a file
+normal_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.s
+.PHONY : normal_utils.c.s
+
 objects.o: objects.c.o
 
 .PHONY : objects.o
@@ -488,6 +542,9 @@ help:
 	@echo "... convertors.o"
 	@echo "... convertors.i"
 	@echo "... convertors.s"
+	@echo "... cylindr.o"
+	@echo "... cylindr.i"
+	@echo "... cylindr.s"
 	@echo "... ft_ssplit.o"
 	@echo "... ft_ssplit.i"
 	@echo "... ft_ssplit.s"
@@ -503,6 +560,9 @@ help:
 	@echo "... miniRT.o"
 	@echo "... miniRT.i"
 	@echo "... miniRT.s"
+	@echo "... normal_utils.o"
+	@echo "... normal_utils.i"
+	@echo "... normal_utils.s"
 	@echo "... objects.o"
 	@echo "... objects.i"
 	@echo "... objects.s"
