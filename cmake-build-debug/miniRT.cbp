@@ -93,9 +93,6 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cylindr.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_printf.h">
-			<Option target="miniRT"/>
-		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_ssplit.c">
 			<Option target="miniRT"/>
 		</Unit>

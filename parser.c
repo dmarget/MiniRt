@@ -15,10 +15,8 @@
 
 #include "minirt.h"
 #include "get_next_line.h"
-//#include "ft_printf.h"
 
-//              ПАРСИМ РАЗРЕШЕНИЕ
-	void        ft_parse_res(char *line, t_mini_rt *rt)
+void        ft_parse_res(char *line, t_mini_rt *rt)
 {
 		if(*line == '\0')
 			return ;
@@ -28,11 +26,10 @@
 		rt->res.y = ft_atoi(rt->split[2]);
 		rt->res.x > 2560 ? rt->res.x = 2560 : 0;
 		rt->res.y > 1440 ? rt->res.y = 1395 : 0;
-		rt->res.flag += 1;
+		rt->res.flag = 1;
 		if(rt->res.x < 1 || rt->res.y < 1)
 			error("Resolution < 0",rt);
 }
-//              ПАРСИМ ОСВЕЩЕНИЕ
 void            ft_parse_amb(char *line, t_mini_rt *rt)
 {
 	if(*line == '\0')
@@ -46,10 +43,9 @@ void            ft_parse_amb(char *line, t_mini_rt *rt)
 	rt->amb.color.r = ft_atoi(rt->split_rgb[0]);
 	rt->amb.color.g = ft_atoi(rt->split_rgb[1]);
 	rt->amb.color.b = ft_atoi(rt->split_rgb[2]);
-	rt->amb.flag += 1;
+	rt->amb.flag = 1;
 	check_rgb(&rt->amb.color.r,&rt->amb.color.g,&rt->amb.color.b);
 }
-// 				ПАРСИМ КАМЕРЫ
 void			ft_parse_cam(char *line, t_mini_rt *rt)
 {
 	t_cam  *tmp;
@@ -74,7 +70,6 @@ void			ft_parse_cam(char *line, t_mini_rt *rt)
 	tmp->flag = 1;
 	ft_lstadd_back(&rt->list_cam, ft_lstnew(tmp));
 }
-//				Парсим свет
 void      		ft_parse_light(char *line, t_mini_rt *rt)
 {
 	t_light   *tmp;
@@ -96,7 +91,6 @@ void      		ft_parse_light(char *line, t_mini_rt *rt)
 	check_rgb(&tmp->color.r,&tmp->color.r,&tmp->color.r);
 	ft_lstadd_back(&rt->list_light, ft_lstnew(tmp));
 }
-//				Парсим плоскость
 void 			ft_parse_pl(char *line, t_mini_rt *rt)
 {
 	t_obj   *pl;
@@ -121,7 +115,6 @@ void 			ft_parse_pl(char *line, t_mini_rt *rt)
 	check_rgb(&pl->color.r,&pl->color.r,&pl->color.r);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(pl));
 }
-//				Парсим сферу
 void 			ft_parse_sp(char *line, t_mini_rt *rt)
 {
 	t_obj  *sp;
@@ -143,7 +136,6 @@ void 			ft_parse_sp(char *line, t_mini_rt *rt)
 	check_rgb(&sp->color.r,&sp->color.r,&sp->color.r);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(sp));
 }
-//				Парсим квадрат
 void 			ft_parse_sq(char *line, t_mini_rt *rt)
 {
 	t_obj   *sq;
@@ -170,7 +162,6 @@ void 			ft_parse_sq(char *line, t_mini_rt *rt)
 	check_rgb(&sq->color.r,&sq->color.r,&sq->color.r);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(sq));
 }
-//				Парсим цилиндр
 void  			ft_parse_cy(char *line, t_mini_rt *rt)
 {
 	t_obj   *cy;
@@ -199,7 +190,6 @@ void  			ft_parse_cy(char *line, t_mini_rt *rt)
 	check_rgb(&cy->color.r, &cy->color.r, &cy->color.r);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(cy));
 }
-//				Парсим треугольник
 void  			ft_parse_tr(char *line, t_mini_rt *rt)
 {
 	t_obj   *tr;
@@ -228,14 +218,12 @@ void  			ft_parse_tr(char *line, t_mini_rt *rt)
 	check_rgb(&tr->color.r, &tr->color.r, &tr->color.r);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(tr));
 }
-
 void 			nul_setup(t_mini_rt *rt)
 {
 	rt->list_cam = NULL;
 	rt->list_light = NULL;
 	rt->list_obj = NULL;
 }
-
 void valid_d(double *d,t_mini_rt *rt)
 {
 		if(*d < 0)
@@ -310,7 +298,6 @@ int check_split(char **str)
 		i++;
 	return(i);
 }
-
 void check_vec(double *x,double *y,double *z,t_mini_rt *rt)
 {
 	if(*x > 1 || *x < -1 || *y > 1 || *y < -1 || *z > 1 || *z < -1)
@@ -319,7 +306,6 @@ void check_vec(double *x,double *y,double *z,t_mini_rt *rt)
 		return ;
 	}
 }
-
 void        ft_start_parse_rt(char *map,t_mini_rt *rt)
 {
 	int     fd;
@@ -345,7 +331,6 @@ int          ft_check_rt(char *str)
 		return (0);
 	return (1);
 }
-
 void check_cam(t_mini_rt *rt)
 {
 	t_list  *tmp;
@@ -353,29 +338,6 @@ void check_cam(t_mini_rt *rt)
 	if (tmp == NULL)
 		error("No cam's",rt);
 }
-//
-//void            count_list(t_mini_rt *rt)
-//{
-//	t_list  *tmp = rt->list_cam;
-//	t_cam   *ptr;
-//	while (tmp != NULL)
-//	{
-//		ptr = tmp->content;
-////		printf("%f\n", ptr->x);
-//		tmp = tmp->next;
-//	}
-//}
-//void            po_listy(t_mini_rt *rt)
-//{
-//	t_list  *tmp = rt->list_sp;
-//	t_sp   *ptr;
-//
-//	while (tmp != NULL)
-//	{
-//		ptr = tmp->content;
-//		tmp = tmp->next;
-//	}
-//}
 void valid(t_mini_rt *rt)
 {
 	if(rt->res.flag != 1)
@@ -396,11 +358,10 @@ int         main(int argc, char **argv)
 	if (argc == 3)
 		rt->flag = 1;
 	nul_setup(rt);
-//	ft_start_parse_rt("../map.rt",rt);
 	ft_start_parse_rt(argv[1],rt);
 	check_cam(rt);
 	valid(rt);
 	put_images(rt);
 	free_all(rt);
-	return (0);
+	exit(0);
 }

@@ -2,12 +2,11 @@
 void main_cam(t_mini_rt *rt)
 {
 	rt->main_c = rt->list_cam;
-//	t_list *tmp_cam = rt->list_cam;
 	t_cam *ptr_cam = rt->main_c->content;
 	rt->tail = ptr_cam->vec;
 	rt->dir = ptr_cam->nvec;
 	rt->fov = ptr_cam->FOV;
-	return ;
+	return;
 }
 void            ft_change_cam(t_mini_rt *rt)
 {

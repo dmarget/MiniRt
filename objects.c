@@ -17,7 +17,7 @@
 //	else
 //		rt->result = eq.t1;// * 0.9;
 //}
-double  sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir)
+double  sphere_equal(t_obj *tmp,t_vec ori,t_vec dir)
 {
 	t_equeal eq;
 
@@ -35,7 +35,7 @@ double  sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir)
 	else
 		return eq.t1;// * 0.9;
 }
-double triangle_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir)
+double triangle_equal(t_obj *triangle,t_vec ori,t_vec dir)
 {
 	t_equeal eq;
 	t_vec	one;
@@ -60,20 +60,7 @@ double triangle_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir)
 		return (0);
 	return (dot_vec(two, t) * eq.k3);//* 0.99;
 }
-//void	plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir)
-//{
-//	t_equeal 	eq;
-//
-//	eq.k1 = dot_vec(sub_vec(plane->vec,ori), vec_normalize(plane->nvec));
-//	eq.k2 = dot_vec(dir, vec_normalize(plane->nvec));
-//	if (eq.k2 == 0 || (eq.k1 < 0 && eq.k2 < 0) || (eq.k1 > 0 && eq.k2 > 0))
-//		return ;
-//	eq.t1 = -eq.k1 / eq.k2;
-//	if (eq.t1 < 0 || rt->result < eq.t1)
-//		return ;
-//	rt->result = eq.t1;//* 0.99;
-//}
-double plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir)
+double plane_equal(t_obj *plane, t_vec ori, t_vec dir)
 {
 	t_equeal 	eq;
 
@@ -103,7 +90,7 @@ double plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir)
 //	if (eq.t1 > 0)
 //		rt->result = eq.t1;
 //}
-double square_equal(t_mini_rt *rt,t_obj *square,t_vec ori,t_vec dir)
+double square_equal(t_obj *square,t_vec ori,t_vec dir)
 {
 	t_equeal 	eq;
 	t_vec	d;
@@ -119,8 +106,5 @@ double square_equal(t_mini_rt *rt,t_obj *square,t_vec ori,t_vec dir)
 		return (INFINITY);
 	if (eq.t1 > 0)
 		return eq.t1;
-}
-void cylindr_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir)
-{
-
+	return (INFINITY);
 }

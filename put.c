@@ -24,14 +24,14 @@ void inter_search(t_list *tmp,double t_max,t_mini_rt *rt,t_vec cam,t_vec dir)
 	while (tmp)
 	{
 		obj = tmp->content;
-		obj->id == 1 ? t = sphere_equal(rt,obj,cam,dir) : 0;
-		obj->id == 2 ? t = plane_equal(rt,obj,cam,dir) : 0;
-		obj->id == 3 ? t = square_equal(rt,obj,cam,dir) : 0;
-		obj->id == 4 ? t = cylinder_equal(rt,obj,cam,dir) : 0;
-		obj->id == 5 ? t = triangle_equal(rt,obj,cam,dir) : 0;
+		obj->id == 1 ? t = sphere_equal(obj,cam,dir) : 0;
+		obj->id == 2 ? t = plane_equal(obj,cam,dir) : 0;
+		obj->id == 3 ? t = square_equal(obj,cam,dir) : 0;
+		obj->id == 4 ? t = cylinder_equal(obj,cam,dir) : 0;
+		obj->id == 5 ? t = triangle_equal(obj,cam,dir) : 0;
 		if (t > 0.00001 && t < rt->t_min && t < t_max)
 		{
-			rt->t_min = t;// * 0.9999;
+			rt->t_min = t;
 			rt->main = obj;
 		}
 		tmp = tmp->next;
@@ -60,15 +60,11 @@ t_color 			light_trace(t_list  *tmp,t_mini_rt *rt,t_vec p,t_vec N,t_obj *obj)
 			N = multi_vec(N,-1.0);
 			v_dot = dot_vec(N,sub_vec(p, ptr_l->vec));
 		}
-//		if(len_vec(rt->pc) < rt->vn_n && obj->flag == 1)
 		if(obj->id == 4 && v_dot < 0)
 		{
 			v_dot *= -1;
 			N = multi_vec(N, -1.0);
 		}
-//		if((obj->id == 4 ) && dot_vec(N,sub_vec(p,ptr_l->vec)) < 0)
-//			if(revers_normal(rt))
-//				N = multi_vec(N,-1.0);
 		if (v_dot > 0.0)
 				rt->intens = ptr_l->range * dot_vec(N, sub_vec(p, ptr_l->vec)) /
 							 (len_vec(N) * len_vec(sub_vec(p, ptr_l->vec)));
@@ -97,10 +93,6 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
 	*(unsigned int*)dst = color;
 }
-int ft_exit(t_mini_rt *rt)
-{
-	exit(0);
-}
 void render(t_mini_rt *rt)
 {
 	int x;
@@ -128,6 +120,10 @@ int             ft_close(int keycode, t_mini_rt *rt)
 	else if(keycode == 48)
 		ft_change_cam(rt);
 	return(0);
+}
+int ft_exit(void)
+{
+	exit(0);
 }
 void             put_images(t_mini_rt *rt)
 {

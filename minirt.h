@@ -142,20 +142,20 @@ int					revers_normal(t_mini_rt *rt);
 void				free_all(t_mini_rt *rt);
 void				check_triangle(t_vec a, t_vec b, t_vec c, t_mini_rt *rt);
 t_vec				quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc);
-double				cylinder_equal(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d);
+double				cylinder_equal(t_obj *cy,t_vec o, t_vec d);
 void				nul_setup(t_mini_rt *rt);
 void				find_normal(t_mini_rt *rt,t_obj *obj);
 int					ft_check_rt(char *argv);
-void				check_rgb(double *r,double *g,double *b);
+void				check_rgb(int *r,int *g,int *b);
 void				normal(t_mini_rt *rt, t_obj *ptr_sp);
 void				normal_cy(t_mini_rt *rt,t_obj *obj);
 void				normal_plane(t_mini_rt *rt, t_obj *obj);
 int					check_split(char **str);
 void				check_vec(double *x,double *y,double *z,t_mini_rt *rt);
 void				valid_d(double *d,t_mini_rt *rt);
-double 				sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir);
-double 				triangle_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir);
-double 				plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir);
-double 				square_equal(t_mini_rt *rt,t_obj *square,t_vec ori,t_vec dir);
+double 				sphere_equal(t_obj *tmp,t_vec ori,t_vec dir);
+double 				triangle_equal(t_obj *triangle,t_vec ori,t_vec dir);
+double 				plane_equal(t_obj *plane, t_vec ori, t_vec dir);
+double 				square_equal(t_obj *square,t_vec ori,t_vec dir);
 #endif
 

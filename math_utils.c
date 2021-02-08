@@ -13,18 +13,6 @@ t_vec multi_vec(t_vec vec,double s)
 	res.z = vec.z * s;
 	return(res);
 }
-t_vec dev_vec(t_vec vec,double s)
-{
-	t_vec res;
-	vec.x = vec.x / s;
-	vec.y = vec.y / s;
-	vec.z = vec.z / s;
-	return(res);
-}
-t_vec    sphere_normal(t_obj *sphere, t_vec surface_point)
-{
-	return (vec_normalize(sub_vec(surface_point, sphere->vec)));
-}
 t_vec	vec_normalize(t_vec v)
 {
 	t_vec	norm;

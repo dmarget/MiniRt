@@ -24,7 +24,7 @@ t_vec	quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc)
 	t.y = (-eq.k2 - sqrt(eq.D)) / (2 * eq.k1);
 	return (t);
 }
-double			cylinder_equal(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d)
+double			cylinder_equal(t_obj *cy,t_vec o, t_vec d)
 {
 	t_vec t;
 	t_vec p[2];

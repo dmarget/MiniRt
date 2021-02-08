@@ -6,7 +6,7 @@ void	free_all(t_mini_rt *rt)
 {
 	(void)rt;
 }
-void check_rgb(double *r,double *g,double *b)
+void check_rgb(int *r,int *g,int *b)
 {
 	if(*r > 255)
 		*r = 255;
