@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/dmarget/Downloads/miniRT-new/bmp.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/bmp.c.o"
   "/Users/dmarget/Downloads/miniRT-new/cam_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/cam_utils.c.o"
   "/Users/dmarget/Downloads/miniRT-new/color_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/color_utils.c.o"
   "/Users/dmarget/Downloads/miniRT-new/convertors.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/convertors.c.o"

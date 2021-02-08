@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/bmp.c">
+			<Option target="miniRT"/>
+		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cam_utils.c">
 			<Option target="miniRT"/>
 		</Unit>

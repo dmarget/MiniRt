@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/miniRT.dir/bmp.c.o"
   "CMakeFiles/miniRT.dir/cam_utils.c.o"
   "CMakeFiles/miniRT.dir/color_utils.c.o"
   "CMakeFiles/miniRT.dir/convertors.c.o"

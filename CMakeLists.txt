@@ -13,6 +13,7 @@ add_executable(miniRT
         get_next_line_utils.c
         math_utils.c
         miniRT.c
+        bmp.c
         minirt.h
         parser.c
         color_utils.c

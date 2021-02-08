@@ -143,6 +143,33 @@ miniRT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/build
 .PHONY : miniRT/fast
 
+bmp.o: bmp.c.o
+
+.PHONY : bmp.o
+
+# target to build an object file
+bmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.o
+.PHONY : bmp.c.o
+
+bmp.i: bmp.c.i
+
+.PHONY : bmp.i
+
+# target to preprocess a source file
+bmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.i
+.PHONY : bmp.c.i
+
+bmp.s: bmp.c.s
+
+.PHONY : bmp.s
+
+# target to generate assembly for a file
+bmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.s
+.PHONY : bmp.c.s
+
 cam_utils.o: cam_utils.c.o
 
 .PHONY : cam_utils.o
@@ -449,6 +476,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... miniRT"
+	@echo "... bmp.o"
+	@echo "... bmp.i"
+	@echo "... bmp.s"
 	@echo "... cam_utils.o"
 	@echo "... cam_utils.i"
 	@echo "... cam_utils.s"

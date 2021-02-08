@@ -130,6 +130,7 @@ typedef struct		s_mini_rt
 	void        	*mlx;
 	void        	*win;
 	t_list			*main_c;
+	t_data			img;
 	t_list			*list_light;
 }					t_mini_rt;
 t_vec				dot_matrix(t_vec r, t_vec u,t_vec n , t_vec d);
@@ -140,6 +141,7 @@ t_vec				sub_vec(t_vec one,t_vec two);
 t_vec				sum_vec(t_vec one,t_vec two);
 double				len_vec(t_vec vec);
 t_vec				vec_normalize(t_vec v);
+void				save(t_mini_rt *all);
 t_vec				vector(double x,double y,int w,int h,double z);
 t_vec				cam_direction(t_mini_rt *rt,double x,double y);
 int					create_trgb(t_color color);
