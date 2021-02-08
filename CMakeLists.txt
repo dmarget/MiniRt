@@ -4,17 +4,16 @@ project(miniRT C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(miniRT
-        convertors.c
         ft_printf.h
         ft_ssplit.c
         cylindr.c
         normal_utils.c
         get_next_line.c
         objects.c
+        check.c
         get_next_line.h
         get_next_line_utils.c
         math_utils.c
-        miniRT.c
         bmp.c
         minirt.h
         parser.c

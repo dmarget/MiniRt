@@ -11,15 +11,15 @@ CMakeFiles/miniRT.dir/cam_utils.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/cam_utils.c.o: ../minirt.h
 CMakeFiles/miniRT.dir/cam_utils.c.o: ../mlx/mlx.h
 
+CMakeFiles/miniRT.dir/check.c.o: ../check.c
+CMakeFiles/miniRT.dir/check.c.o: ../libft/libft.h
+CMakeFiles/miniRT.dir/check.c.o: ../minirt.h
+CMakeFiles/miniRT.dir/check.c.o: ../mlx/mlx.h
+
 CMakeFiles/miniRT.dir/color_utils.c.o: ../color_utils.c
 CMakeFiles/miniRT.dir/color_utils.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/color_utils.c.o: ../minirt.h
 CMakeFiles/miniRT.dir/color_utils.c.o: ../mlx/mlx.h
-
-CMakeFiles/miniRT.dir/convertors.c.o: ../convertors.c
-CMakeFiles/miniRT.dir/convertors.c.o: ../libft/libft.h
-CMakeFiles/miniRT.dir/convertors.c.o: ../minirt.h
-CMakeFiles/miniRT.dir/convertors.c.o: ../mlx/mlx.h
 
 CMakeFiles/miniRT.dir/cylindr.c.o: ../cylindr.c
 CMakeFiles/miniRT.dir/cylindr.c.o: ../libft/libft.h
@@ -39,8 +39,6 @@ CMakeFiles/miniRT.dir/math_utils.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/math_utils.c.o: ../math_utils.c
 CMakeFiles/miniRT.dir/math_utils.c.o: ../minirt.h
 CMakeFiles/miniRT.dir/math_utils.c.o: ../mlx/mlx.h
-
-CMakeFiles/miniRT.dir/miniRT.c.o: ../miniRT.c
 
 CMakeFiles/miniRT.dir/normal_utils.c.o: ../libft/libft.h
 CMakeFiles/miniRT.dir/normal_utils.c.o: ../minirt.h

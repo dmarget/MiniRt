@@ -11,13 +11,13 @@ CMakeFiles/miniRT.dir/cam_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
-CMakeFiles/miniRT.dir/color_utils.c.o
- /Users/dmarget/Downloads/miniRT-new/color_utils.c
+CMakeFiles/miniRT.dir/check.c.o
+ /Users/dmarget/Downloads/miniRT-new/check.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
-CMakeFiles/miniRT.dir/convertors.c.o
- /Users/dmarget/Downloads/miniRT-new/convertors.c
+CMakeFiles/miniRT.dir/color_utils.c.o
+ /Users/dmarget/Downloads/miniRT-new/color_utils.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
@@ -40,8 +40,6 @@ CMakeFiles/miniRT.dir/math_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/math_utils.c
  /Users/dmarget/Downloads/miniRT-new/minirt.h
  /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
-CMakeFiles/miniRT.dir/miniRT.c.o
- /Users/dmarget/Downloads/miniRT-new/miniRT.c
 CMakeFiles/miniRT.dir/normal_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h

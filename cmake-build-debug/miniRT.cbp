@@ -84,10 +84,10 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cam_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/color_utils.c">
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/check.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/convertors.c">
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/color_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cylindr.c">
@@ -112,12 +112,6 @@
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/math_utils.c">
-			<Option target="miniRT"/>
-		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/miniRT.c">
-			<Option target="miniRT"/>
-		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/miniRT.h">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/minirt.h">

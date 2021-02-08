@@ -18,9 +18,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
-//#include "printf.h"
 #include <math.h>
-# define INT_MAX 2147483647
 
 typedef struct  s_data {
 	void			*img;
@@ -29,14 +27,6 @@ typedef struct  s_data {
 	int				line_length;
 	int				endian;
 }					t_data;
-//typedef struct	s_vars
-//{
-//	t_data		img;
-//	void		*mlx;
-//	void		*win;
-//	void		*rt;
-//	int			bmp;
-//}				t_vars;
 typedef struct		s_color
 {
 	int 			r;
@@ -53,6 +43,7 @@ typedef struct		s_amb
 {
 	double			range;
 	t_color			color;
+	int				flag;
 }					t_amb;
 typedef struct		s_res
 {
@@ -79,8 +70,6 @@ typedef struct		s_equeal
 	double			k2;
 	double			k3;
 	t_vec			res;
-	t_vec			cross;
-	t_vec			sub;
 	double			D;
 	double			t1;
 	double			t2;
@@ -97,12 +86,6 @@ typedef struct		s_objects
 	t_color			color;
 	int				flag;
 }					t_obj;
-typedef struct 		s_clist
-{
-	void			*content;
-	struct s_clist	*next;
-	struct s_clist	*first;
-}					t_clist;
 typedef struct		s_mini_rt
 {
 	int             i;
@@ -120,6 +103,7 @@ typedef struct		s_mini_rt
 	t_vec			pc;
 	double			t_min;
 	t_vec 			n;
+	int				flag;
 	t_vec 			vn;
 	double 			vn_n;
 	t_vec 			p;
@@ -143,6 +127,7 @@ double				len_vec(t_vec vec);
 t_vec				vec_normalize(t_vec v);
 void            	ft_change_cam(t_mini_rt *rt);
 void				save(t_mini_rt *all);
+void				error(char *s, t_mini_rt *rt);
 void				render(t_mini_rt *rt);
 t_vec				vector(double x,double y,int w,int h,double z);
 t_vec				cam_direction(t_mini_rt *rt,double x,double y);
@@ -154,9 +139,10 @@ t_color				color_double_coe(t_color color1,t_color color2,double coe);
 void				main_cam(t_mini_rt *rt);
 void				put_images(t_mini_rt *rt);
 int					revers_normal(t_mini_rt *rt);
+void				free_all(t_mini_rt *rt);
+void				check_triangle(t_vec a, t_vec b, t_vec c, t_mini_rt *rt);
 t_vec				quadratic_cylinder(t_vec d, t_obj *cy, t_vec oc);
 double				cylinder_equal(t_mini_rt *rt,t_obj *cy,t_vec o, t_vec d);
-void				ctv(t_mini_rt *rt, double x, double y);
 void				nul_setup(t_mini_rt *rt);
 void				find_normal(t_mini_rt *rt,t_obj *obj);
 int					ft_check_rt(char *argv);
@@ -165,16 +151,11 @@ void				normal(t_mini_rt *rt, t_obj *ptr_sp);
 void				normal_cy(t_mini_rt *rt,t_obj *obj);
 void				normal_plane(t_mini_rt *rt, t_obj *obj);
 int					check_split(char **str);
-void				check_vec(double *x,double *y,double *z);
-void				ints_error();
-void				valid_d(double *d);
-//void				sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir);
+void				check_vec(double *x,double *y,double *z,t_mini_rt *rt);
+void				valid_d(double *d,t_mini_rt *rt);
 double 				sphere_equal(t_mini_rt *rt, t_obj *tmp,t_vec ori,t_vec dir);
-//void				triangle_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir);
 double 				triangle_equal(t_mini_rt *rt,t_obj *triangle,t_vec ori,t_vec dir);
 double 				plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir);
-//void				plane_equal(t_mini_rt *rt, t_obj *plane, t_vec ori, t_vec dir);
-//void				square_equal(t_mini_rt *rt,t_obj *square,t_vec ori,t_vec dir);
 double 				square_equal(t_mini_rt *rt,t_obj *square,t_vec ori,t_vec dir);
 #endif
 

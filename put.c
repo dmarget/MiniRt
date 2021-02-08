@@ -136,7 +136,8 @@ void             put_images(t_mini_rt *rt)
 	rt->mlx = mlx_init();
 	rt->win = mlx_new_window(rt->mlx, rt->res.x, rt->res.y, "FKMiniRT!");
 	render(rt);
-//	save(rt);
+	if(rt->flag == 1)
+		save(rt);
 	mlx_hook(rt->win, 2, 0, ft_close, rt);
 	mlx_hook(rt->win, 2, 0,	ft_close, rt);
 	mlx_hook(rt->win, 17, 0, ft_exit, rt);

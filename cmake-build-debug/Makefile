@@ -197,6 +197,33 @@ cam_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cam_utils.c.s
 .PHONY : cam_utils.c.s
 
+check.o: check.c.o
+
+.PHONY : check.o
+
+# target to build an object file
+check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.o
+.PHONY : check.c.o
+
+check.i: check.c.i
+
+.PHONY : check.i
+
+# target to preprocess a source file
+check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.i
+.PHONY : check.c.i
+
+check.s: check.c.s
+
+.PHONY : check.s
+
+# target to generate assembly for a file
+check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.s
+.PHONY : check.c.s
+
 color_utils.o: color_utils.c.o
 
 .PHONY : color_utils.o
@@ -223,33 +250,6 @@ color_utils.s: color_utils.c.s
 color_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/color_utils.c.s
 .PHONY : color_utils.c.s
-
-convertors.o: convertors.c.o
-
-.PHONY : convertors.o
-
-# target to build an object file
-convertors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/convertors.c.o
-.PHONY : convertors.c.o
-
-convertors.i: convertors.c.i
-
-.PHONY : convertors.i
-
-# target to preprocess a source file
-convertors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/convertors.c.i
-.PHONY : convertors.c.i
-
-convertors.s: convertors.c.s
-
-.PHONY : convertors.s
-
-# target to generate assembly for a file
-convertors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/convertors.c.s
-.PHONY : convertors.c.s
 
 cylindr.o: cylindr.c.o
 
@@ -386,33 +386,6 @@ math_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/math_utils.c.s
 .PHONY : math_utils.c.s
 
-miniRT.o: miniRT.c.o
-
-.PHONY : miniRT.o
-
-# target to build an object file
-miniRT.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/miniRT.c.o
-.PHONY : miniRT.c.o
-
-miniRT.i: miniRT.c.i
-
-.PHONY : miniRT.i
-
-# target to preprocess a source file
-miniRT.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/miniRT.c.i
-.PHONY : miniRT.c.i
-
-miniRT.s: miniRT.c.s
-
-.PHONY : miniRT.s
-
-# target to generate assembly for a file
-miniRT.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/miniRT.c.s
-.PHONY : miniRT.c.s
-
 normal_utils.o: normal_utils.c.o
 
 .PHONY : normal_utils.o
@@ -536,12 +509,12 @@ help:
 	@echo "... cam_utils.o"
 	@echo "... cam_utils.i"
 	@echo "... cam_utils.s"
+	@echo "... check.o"
+	@echo "... check.i"
+	@echo "... check.s"
 	@echo "... color_utils.o"
 	@echo "... color_utils.i"
 	@echo "... color_utils.s"
-	@echo "... convertors.o"
-	@echo "... convertors.i"
-	@echo "... convertors.s"
 	@echo "... cylindr.o"
 	@echo "... cylindr.i"
 	@echo "... cylindr.s"
@@ -557,9 +530,6 @@ help:
 	@echo "... math_utils.o"
 	@echo "... math_utils.i"
 	@echo "... math_utils.s"
-	@echo "... miniRT.o"
-	@echo "... miniRT.i"
-	@echo "... miniRT.s"
 	@echo "... normal_utils.o"
 	@echo "... normal_utils.i"
 	@echo "... normal_utils.s"

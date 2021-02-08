@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/dmarget/Downloads/miniRT-new/bmp.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/cam_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/color_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/convertors.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/cylindr.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
 /Users/dmarget/Downloads/miniRT-new/get_next_line.h
 unistd.h
 -
@@ -46,12 +26,6 @@ stdio.h
 unistd.h
 -
 
-/Users/dmarget/Downloads/miniRT-new/math_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-math.h
--
-
 /Users/dmarget/Downloads/miniRT-new/minirt.h
 mlx/mlx.h
 /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
@@ -70,21 +44,9 @@ math.h
 
 /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 
-/Users/dmarget/Downloads/miniRT-new/normal_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/objects.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
 /Users/dmarget/Downloads/miniRT-new/parser.c
 minirt.h
 /Users/dmarget/Downloads/miniRT-new/minirt.h
 get_next_line.h
 /Users/dmarget/Downloads/miniRT-new/get_next_line.h
-
-/Users/dmarget/Downloads/miniRT-new/put.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
 

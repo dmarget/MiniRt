@@ -46,14 +46,12 @@ void				save(t_mini_rt *all)
 {
 	int	fd;
 	int	limb;
-//	picture(all);
 	while (all->res.x % 4 != 0)
 		all->res.x--;
 	limb = 54 + (4 * all->res.y * all->res.x);
 	if (!(fd = open("screen.bmp", O_WRONLY | O_CREAT
 								  | O_TRUNC | O_APPEND, 0666)))
-		exit(1);
-//		ex_clz(all->pars.fd);
+		error("bad open",all);
 	bmp_hdr(all, limb, fd);
 	get_pxl(all, fd);
 	close(fd);
