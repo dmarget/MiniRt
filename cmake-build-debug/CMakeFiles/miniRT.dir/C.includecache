@@ -6,35 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/dmarget/Downloads/miniRT-new/bmp.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/cam_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/check.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/color_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/cylindr.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/ft_atof.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/ft_atoi.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-
-/Users/dmarget/Downloads/miniRT-new/get_next_line.h
+../includes/get_next_line.h
 unistd.h
 -
 fcntl.h
@@ -44,7 +16,7 @@ stdio.h
 stdlib.h
 -
 
-/Users/dmarget/Downloads/miniRT-new/libft/libft.h
+../includes/libft.h
 stdlib.h
 -
 string.h
@@ -54,21 +26,13 @@ stdio.h
 unistd.h
 -
 
-/Users/dmarget/Downloads/miniRT-new/math_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-math.h
--
-
-/Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
-
-/Users/dmarget/Downloads/miniRT-new/minirt.h
-minilibx_mms_20200219/mlx.h
-/Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
+../includes/minirt.h
 stdio.h
 -
-libft/libft.h
-/Users/dmarget/Downloads/miniRT-new/libft/libft.h
+libft.h
+../includes/libft.h
+mlx.h
+../includes/mlx.h
 unistd.h
 -
 stdlib.h
@@ -78,21 +42,15 @@ fcntl.h
 math.h
 -
 
-/Users/dmarget/Downloads/miniRT-new/normal_utils.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
+../includes/mlx.h
 
-/Users/dmarget/Downloads/miniRT-new/objects.c
+/Users/dmarget/Downloads/miniRT-new/srcs/check.c
 minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
+/Users/dmarget/Downloads/miniRT-new/srcs/minirt.h
 
-/Users/dmarget/Downloads/miniRT-new/parser.c
+/Users/dmarget/Downloads/miniRT-new/srcs/parser.c
 minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
+/Users/dmarget/Downloads/miniRT-new/srcs/minirt.h
 get_next_line.h
-/Users/dmarget/Downloads/miniRT-new/get_next_line.h
-
-/Users/dmarget/Downloads/miniRT-new/put.c
-minirt.h
-/Users/dmarget/Downloads/miniRT-new/minirt.h
+/Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.h
 

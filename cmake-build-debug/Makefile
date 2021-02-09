@@ -143,410 +143,410 @@ miniRT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/build
 .PHONY : miniRT/fast
 
-bmp.o: bmp.c.o
+srcs/bmp.o: srcs/bmp.c.o
 
-.PHONY : bmp.o
-
-# target to build an object file
-bmp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.o
-.PHONY : bmp.c.o
-
-bmp.i: bmp.c.i
-
-.PHONY : bmp.i
-
-# target to preprocess a source file
-bmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.i
-.PHONY : bmp.c.i
-
-bmp.s: bmp.c.s
-
-.PHONY : bmp.s
-
-# target to generate assembly for a file
-bmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/bmp.c.s
-.PHONY : bmp.c.s
-
-cam_utils.o: cam_utils.c.o
-
-.PHONY : cam_utils.o
+.PHONY : srcs/bmp.o
 
 # target to build an object file
-cam_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cam_utils.c.o
-.PHONY : cam_utils.c.o
+srcs/bmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/bmp.c.o
+.PHONY : srcs/bmp.c.o
 
-cam_utils.i: cam_utils.c.i
+srcs/bmp.i: srcs/bmp.c.i
 
-.PHONY : cam_utils.i
+.PHONY : srcs/bmp.i
 
 # target to preprocess a source file
-cam_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cam_utils.c.i
-.PHONY : cam_utils.c.i
+srcs/bmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/bmp.c.i
+.PHONY : srcs/bmp.c.i
 
-cam_utils.s: cam_utils.c.s
+srcs/bmp.s: srcs/bmp.c.s
 
-.PHONY : cam_utils.s
+.PHONY : srcs/bmp.s
 
 # target to generate assembly for a file
-cam_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cam_utils.c.s
-.PHONY : cam_utils.c.s
+srcs/bmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/bmp.c.s
+.PHONY : srcs/bmp.c.s
 
-check.o: check.c.o
+srcs/cam_utils.o: srcs/cam_utils.c.o
 
-.PHONY : check.o
+.PHONY : srcs/cam_utils.o
 
 # target to build an object file
-check.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.o
-.PHONY : check.c.o
+srcs/cam_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cam_utils.c.o
+.PHONY : srcs/cam_utils.c.o
 
-check.i: check.c.i
+srcs/cam_utils.i: srcs/cam_utils.c.i
 
-.PHONY : check.i
+.PHONY : srcs/cam_utils.i
 
 # target to preprocess a source file
-check.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.i
-.PHONY : check.c.i
+srcs/cam_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cam_utils.c.i
+.PHONY : srcs/cam_utils.c.i
 
-check.s: check.c.s
+srcs/cam_utils.s: srcs/cam_utils.c.s
 
-.PHONY : check.s
+.PHONY : srcs/cam_utils.s
 
 # target to generate assembly for a file
-check.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/check.c.s
-.PHONY : check.c.s
+srcs/cam_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cam_utils.c.s
+.PHONY : srcs/cam_utils.c.s
 
-color_utils.o: color_utils.c.o
+srcs/check.o: srcs/check.c.o
 
-.PHONY : color_utils.o
+.PHONY : srcs/check.o
 
 # target to build an object file
-color_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/color_utils.c.o
-.PHONY : color_utils.c.o
+srcs/check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/check.c.o
+.PHONY : srcs/check.c.o
 
-color_utils.i: color_utils.c.i
+srcs/check.i: srcs/check.c.i
 
-.PHONY : color_utils.i
+.PHONY : srcs/check.i
 
 # target to preprocess a source file
-color_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/color_utils.c.i
-.PHONY : color_utils.c.i
+srcs/check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/check.c.i
+.PHONY : srcs/check.c.i
 
-color_utils.s: color_utils.c.s
+srcs/check.s: srcs/check.c.s
 
-.PHONY : color_utils.s
+.PHONY : srcs/check.s
 
 # target to generate assembly for a file
-color_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/color_utils.c.s
-.PHONY : color_utils.c.s
+srcs/check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/check.c.s
+.PHONY : srcs/check.c.s
 
-cylindr.o: cylindr.c.o
+srcs/color_utils.o: srcs/color_utils.c.o
 
-.PHONY : cylindr.o
+.PHONY : srcs/color_utils.o
 
 # target to build an object file
-cylindr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.o
-.PHONY : cylindr.c.o
+srcs/color_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/color_utils.c.o
+.PHONY : srcs/color_utils.c.o
 
-cylindr.i: cylindr.c.i
+srcs/color_utils.i: srcs/color_utils.c.i
 
-.PHONY : cylindr.i
+.PHONY : srcs/color_utils.i
 
 # target to preprocess a source file
-cylindr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.i
-.PHONY : cylindr.c.i
+srcs/color_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/color_utils.c.i
+.PHONY : srcs/color_utils.c.i
 
-cylindr.s: cylindr.c.s
+srcs/color_utils.s: srcs/color_utils.c.s
 
-.PHONY : cylindr.s
+.PHONY : srcs/color_utils.s
 
 # target to generate assembly for a file
-cylindr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.s
-.PHONY : cylindr.c.s
+srcs/color_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/color_utils.c.s
+.PHONY : srcs/color_utils.c.s
 
-ft_atof.o: ft_atof.c.o
+srcs/cylindr.o: srcs/cylindr.c.o
 
-.PHONY : ft_atof.o
+.PHONY : srcs/cylindr.o
 
 # target to build an object file
-ft_atof.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.o
-.PHONY : ft_atof.c.o
+srcs/cylindr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cylindr.c.o
+.PHONY : srcs/cylindr.c.o
 
-ft_atof.i: ft_atof.c.i
+srcs/cylindr.i: srcs/cylindr.c.i
 
-.PHONY : ft_atof.i
+.PHONY : srcs/cylindr.i
 
 # target to preprocess a source file
-ft_atof.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.i
-.PHONY : ft_atof.c.i
+srcs/cylindr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cylindr.c.i
+.PHONY : srcs/cylindr.c.i
 
-ft_atof.s: ft_atof.c.s
+srcs/cylindr.s: srcs/cylindr.c.s
 
-.PHONY : ft_atof.s
+.PHONY : srcs/cylindr.s
 
 # target to generate assembly for a file
-ft_atof.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.s
-.PHONY : ft_atof.c.s
+srcs/cylindr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/cylindr.c.s
+.PHONY : srcs/cylindr.c.s
 
-ft_atoi.o: ft_atoi.c.o
+srcs/ft_atof.o: srcs/ft_atof.c.o
 
-.PHONY : ft_atoi.o
+.PHONY : srcs/ft_atof.o
 
 # target to build an object file
-ft_atoi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.o
-.PHONY : ft_atoi.c.o
+srcs/ft_atof.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atof.c.o
+.PHONY : srcs/ft_atof.c.o
 
-ft_atoi.i: ft_atoi.c.i
+srcs/ft_atof.i: srcs/ft_atof.c.i
 
-.PHONY : ft_atoi.i
+.PHONY : srcs/ft_atof.i
 
 # target to preprocess a source file
-ft_atoi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.i
-.PHONY : ft_atoi.c.i
+srcs/ft_atof.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atof.c.i
+.PHONY : srcs/ft_atof.c.i
 
-ft_atoi.s: ft_atoi.c.s
+srcs/ft_atof.s: srcs/ft_atof.c.s
 
-.PHONY : ft_atoi.s
+.PHONY : srcs/ft_atof.s
 
 # target to generate assembly for a file
-ft_atoi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.s
-.PHONY : ft_atoi.c.s
+srcs/ft_atof.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atof.c.s
+.PHONY : srcs/ft_atof.c.s
 
-ft_ssplit.o: ft_ssplit.c.o
+srcs/ft_atoi.o: srcs/ft_atoi.c.o
 
-.PHONY : ft_ssplit.o
+.PHONY : srcs/ft_atoi.o
 
 # target to build an object file
-ft_ssplit.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_ssplit.c.o
-.PHONY : ft_ssplit.c.o
+srcs/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o
+.PHONY : srcs/ft_atoi.c.o
 
-ft_ssplit.i: ft_ssplit.c.i
+srcs/ft_atoi.i: srcs/ft_atoi.c.i
 
-.PHONY : ft_ssplit.i
+.PHONY : srcs/ft_atoi.i
 
 # target to preprocess a source file
-ft_ssplit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_ssplit.c.i
-.PHONY : ft_ssplit.c.i
+srcs/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atoi.c.i
+.PHONY : srcs/ft_atoi.c.i
 
-ft_ssplit.s: ft_ssplit.c.s
+srcs/ft_atoi.s: srcs/ft_atoi.c.s
 
-.PHONY : ft_ssplit.s
+.PHONY : srcs/ft_atoi.s
 
 # target to generate assembly for a file
-ft_ssplit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_ssplit.c.s
-.PHONY : ft_ssplit.c.s
+srcs/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_atoi.c.s
+.PHONY : srcs/ft_atoi.c.s
 
-get_next_line.o: get_next_line.c.o
+srcs/ft_ssplit.o: srcs/ft_ssplit.c.o
 
-.PHONY : get_next_line.o
+.PHONY : srcs/ft_ssplit.o
 
 # target to build an object file
-get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
+srcs/ft_ssplit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o
+.PHONY : srcs/ft_ssplit.c.o
 
-get_next_line.i: get_next_line.c.i
+srcs/ft_ssplit.i: srcs/ft_ssplit.c.i
 
-.PHONY : get_next_line.i
+.PHONY : srcs/ft_ssplit.i
 
 # target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
+srcs/ft_ssplit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.i
+.PHONY : srcs/ft_ssplit.c.i
 
-get_next_line.s: get_next_line.c.s
+srcs/ft_ssplit.s: srcs/ft_ssplit.c.s
 
-.PHONY : get_next_line.s
+.PHONY : srcs/ft_ssplit.s
 
 # target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
+srcs/ft_ssplit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.s
+.PHONY : srcs/ft_ssplit.c.s
 
-get_next_line_utils.o: get_next_line_utils.c.o
+srcs/get_next_line.o: srcs/get_next_line.c.o
 
-.PHONY : get_next_line_utils.o
+.PHONY : srcs/get_next_line.o
 
 # target to build an object file
-get_next_line_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line_utils.c.o
-.PHONY : get_next_line_utils.c.o
+srcs/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line.c.o
+.PHONY : srcs/get_next_line.c.o
 
-get_next_line_utils.i: get_next_line_utils.c.i
+srcs/get_next_line.i: srcs/get_next_line.c.i
 
-.PHONY : get_next_line_utils.i
+.PHONY : srcs/get_next_line.i
 
 # target to preprocess a source file
-get_next_line_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line_utils.c.i
-.PHONY : get_next_line_utils.c.i
+srcs/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line.c.i
+.PHONY : srcs/get_next_line.c.i
 
-get_next_line_utils.s: get_next_line_utils.c.s
+srcs/get_next_line.s: srcs/get_next_line.c.s
 
-.PHONY : get_next_line_utils.s
+.PHONY : srcs/get_next_line.s
 
 # target to generate assembly for a file
-get_next_line_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/get_next_line_utils.c.s
-.PHONY : get_next_line_utils.c.s
+srcs/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line.c.s
+.PHONY : srcs/get_next_line.c.s
 
-math_utils.o: math_utils.c.o
+srcs/get_next_line_utils.o: srcs/get_next_line_utils.c.o
 
-.PHONY : math_utils.o
+.PHONY : srcs/get_next_line_utils.o
 
 # target to build an object file
-math_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/math_utils.c.o
-.PHONY : math_utils.c.o
+srcs/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o
+.PHONY : srcs/get_next_line_utils.c.o
 
-math_utils.i: math_utils.c.i
+srcs/get_next_line_utils.i: srcs/get_next_line_utils.c.i
 
-.PHONY : math_utils.i
+.PHONY : srcs/get_next_line_utils.i
 
 # target to preprocess a source file
-math_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/math_utils.c.i
-.PHONY : math_utils.c.i
+srcs/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.i
+.PHONY : srcs/get_next_line_utils.c.i
 
-math_utils.s: math_utils.c.s
+srcs/get_next_line_utils.s: srcs/get_next_line_utils.c.s
 
-.PHONY : math_utils.s
+.PHONY : srcs/get_next_line_utils.s
 
 # target to generate assembly for a file
-math_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/math_utils.c.s
-.PHONY : math_utils.c.s
+srcs/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.s
+.PHONY : srcs/get_next_line_utils.c.s
 
-normal_utils.o: normal_utils.c.o
+srcs/math_utils.o: srcs/math_utils.c.o
 
-.PHONY : normal_utils.o
+.PHONY : srcs/math_utils.o
 
 # target to build an object file
-normal_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.o
-.PHONY : normal_utils.c.o
+srcs/math_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/math_utils.c.o
+.PHONY : srcs/math_utils.c.o
 
-normal_utils.i: normal_utils.c.i
+srcs/math_utils.i: srcs/math_utils.c.i
 
-.PHONY : normal_utils.i
+.PHONY : srcs/math_utils.i
 
 # target to preprocess a source file
-normal_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.i
-.PHONY : normal_utils.c.i
+srcs/math_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/math_utils.c.i
+.PHONY : srcs/math_utils.c.i
 
-normal_utils.s: normal_utils.c.s
+srcs/math_utils.s: srcs/math_utils.c.s
 
-.PHONY : normal_utils.s
+.PHONY : srcs/math_utils.s
 
 # target to generate assembly for a file
-normal_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/normal_utils.c.s
-.PHONY : normal_utils.c.s
+srcs/math_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/math_utils.c.s
+.PHONY : srcs/math_utils.c.s
 
-objects.o: objects.c.o
+srcs/normal_utils.o: srcs/normal_utils.c.o
 
-.PHONY : objects.o
+.PHONY : srcs/normal_utils.o
 
 # target to build an object file
-objects.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/objects.c.o
-.PHONY : objects.c.o
+srcs/normal_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/normal_utils.c.o
+.PHONY : srcs/normal_utils.c.o
 
-objects.i: objects.c.i
+srcs/normal_utils.i: srcs/normal_utils.c.i
 
-.PHONY : objects.i
+.PHONY : srcs/normal_utils.i
 
 # target to preprocess a source file
-objects.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/objects.c.i
-.PHONY : objects.c.i
+srcs/normal_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/normal_utils.c.i
+.PHONY : srcs/normal_utils.c.i
 
-objects.s: objects.c.s
+srcs/normal_utils.s: srcs/normal_utils.c.s
 
-.PHONY : objects.s
+.PHONY : srcs/normal_utils.s
 
 # target to generate assembly for a file
-objects.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/objects.c.s
-.PHONY : objects.c.s
+srcs/normal_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/normal_utils.c.s
+.PHONY : srcs/normal_utils.c.s
 
-parser.o: parser.c.o
+srcs/objects.o: srcs/objects.c.o
 
-.PHONY : parser.o
+.PHONY : srcs/objects.o
 
 # target to build an object file
-parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/parser.c.o
-.PHONY : parser.c.o
+srcs/objects.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/objects.c.o
+.PHONY : srcs/objects.c.o
 
-parser.i: parser.c.i
+srcs/objects.i: srcs/objects.c.i
 
-.PHONY : parser.i
+.PHONY : srcs/objects.i
 
 # target to preprocess a source file
-parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/parser.c.i
-.PHONY : parser.c.i
+srcs/objects.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/objects.c.i
+.PHONY : srcs/objects.c.i
 
-parser.s: parser.c.s
+srcs/objects.s: srcs/objects.c.s
 
-.PHONY : parser.s
+.PHONY : srcs/objects.s
 
 # target to generate assembly for a file
-parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/parser.c.s
-.PHONY : parser.c.s
+srcs/objects.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/objects.c.s
+.PHONY : srcs/objects.c.s
 
-put.o: put.c.o
+srcs/parser.o: srcs/parser.c.o
 
-.PHONY : put.o
+.PHONY : srcs/parser.o
 
 # target to build an object file
-put.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/put.c.o
-.PHONY : put.c.o
+srcs/parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parser.c.o
+.PHONY : srcs/parser.c.o
 
-put.i: put.c.i
+srcs/parser.i: srcs/parser.c.i
 
-.PHONY : put.i
+.PHONY : srcs/parser.i
 
 # target to preprocess a source file
-put.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/put.c.i
-.PHONY : put.c.i
+srcs/parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parser.c.i
+.PHONY : srcs/parser.c.i
 
-put.s: put.c.s
+srcs/parser.s: srcs/parser.c.s
 
-.PHONY : put.s
+.PHONY : srcs/parser.s
 
 # target to generate assembly for a file
-put.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/put.c.s
-.PHONY : put.c.s
+srcs/parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parser.c.s
+.PHONY : srcs/parser.c.s
+
+srcs/put.o: srcs/put.c.o
+
+.PHONY : srcs/put.o
+
+# target to build an object file
+srcs/put.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put.c.o
+.PHONY : srcs/put.c.o
+
+srcs/put.i: srcs/put.c.i
+
+.PHONY : srcs/put.i
+
+# target to preprocess a source file
+srcs/put.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put.c.i
+.PHONY : srcs/put.c.i
+
+srcs/put.s: srcs/put.c.s
+
+.PHONY : srcs/put.s
+
+# target to generate assembly for a file
+srcs/put.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put.c.s
+.PHONY : srcs/put.c.s
 
 # Help Target
 help:
@@ -557,51 +557,51 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... miniRT"
-	@echo "... bmp.o"
-	@echo "... bmp.i"
-	@echo "... bmp.s"
-	@echo "... cam_utils.o"
-	@echo "... cam_utils.i"
-	@echo "... cam_utils.s"
-	@echo "... check.o"
-	@echo "... check.i"
-	@echo "... check.s"
-	@echo "... color_utils.o"
-	@echo "... color_utils.i"
-	@echo "... color_utils.s"
-	@echo "... cylindr.o"
-	@echo "... cylindr.i"
-	@echo "... cylindr.s"
-	@echo "... ft_atof.o"
-	@echo "... ft_atof.i"
-	@echo "... ft_atof.s"
-	@echo "... ft_atoi.o"
-	@echo "... ft_atoi.i"
-	@echo "... ft_atoi.s"
-	@echo "... ft_ssplit.o"
-	@echo "... ft_ssplit.i"
-	@echo "... ft_ssplit.s"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
-	@echo "... get_next_line_utils.o"
-	@echo "... get_next_line_utils.i"
-	@echo "... get_next_line_utils.s"
-	@echo "... math_utils.o"
-	@echo "... math_utils.i"
-	@echo "... math_utils.s"
-	@echo "... normal_utils.o"
-	@echo "... normal_utils.i"
-	@echo "... normal_utils.s"
-	@echo "... objects.o"
-	@echo "... objects.i"
-	@echo "... objects.s"
-	@echo "... parser.o"
-	@echo "... parser.i"
-	@echo "... parser.s"
-	@echo "... put.o"
-	@echo "... put.i"
-	@echo "... put.s"
+	@echo "... srcs/bmp.o"
+	@echo "... srcs/bmp.i"
+	@echo "... srcs/bmp.s"
+	@echo "... srcs/cam_utils.o"
+	@echo "... srcs/cam_utils.i"
+	@echo "... srcs/cam_utils.s"
+	@echo "... srcs/check.o"
+	@echo "... srcs/check.i"
+	@echo "... srcs/check.s"
+	@echo "... srcs/color_utils.o"
+	@echo "... srcs/color_utils.i"
+	@echo "... srcs/color_utils.s"
+	@echo "... srcs/cylindr.o"
+	@echo "... srcs/cylindr.i"
+	@echo "... srcs/cylindr.s"
+	@echo "... srcs/ft_atof.o"
+	@echo "... srcs/ft_atof.i"
+	@echo "... srcs/ft_atof.s"
+	@echo "... srcs/ft_atoi.o"
+	@echo "... srcs/ft_atoi.i"
+	@echo "... srcs/ft_atoi.s"
+	@echo "... srcs/ft_ssplit.o"
+	@echo "... srcs/ft_ssplit.i"
+	@echo "... srcs/ft_ssplit.s"
+	@echo "... srcs/get_next_line.o"
+	@echo "... srcs/get_next_line.i"
+	@echo "... srcs/get_next_line.s"
+	@echo "... srcs/get_next_line_utils.o"
+	@echo "... srcs/get_next_line_utils.i"
+	@echo "... srcs/get_next_line_utils.s"
+	@echo "... srcs/math_utils.o"
+	@echo "... srcs/math_utils.i"
+	@echo "... srcs/math_utils.s"
+	@echo "... srcs/normal_utils.o"
+	@echo "... srcs/normal_utils.i"
+	@echo "... srcs/normal_utils.s"
+	@echo "... srcs/objects.o"
+	@echo "... srcs/objects.i"
+	@echo "... srcs/objects.s"
+	@echo "... srcs/parser.o"
+	@echo "... srcs/parser.i"
+	@echo "... srcs/parser.s"
+	@echo "... srcs/put.o"
+	@echo "... srcs/put.i"
+	@echo "... srcs/put.s"
 .PHONY : help
 
 

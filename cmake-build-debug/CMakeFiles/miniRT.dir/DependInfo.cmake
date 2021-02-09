@@ -4,26 +4,27 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/dmarget/Downloads/miniRT-new/bmp.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/bmp.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/cam_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/cam_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/check.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/check.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/color_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/color_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/cylindr.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/cylindr.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/ft_atof.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_atof.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/ft_atoi.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_atoi.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/ft_ssplit.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_ssplit.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/get_next_line.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/get_next_line.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/get_next_line_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/get_next_line_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/math_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/math_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/normal_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/normal_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/objects.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/objects.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/parser.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/parser.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/put.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/put.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/bmp.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/bmp.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/cam_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/cam_utils.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/check.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/check.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/color_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/color_utils.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/cylindr.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/cylindr.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/ft_atof.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/ft_atof.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/ft_atoi.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/ft_ssplit.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/get_next_line.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/get_next_line_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/math_utils.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/normal_utils.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/objects.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/objects.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/parser.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/parser.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/srcs/put.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/put.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../includes"
   )
 
 # Targets to which this target links.

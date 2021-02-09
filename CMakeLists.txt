@@ -3,25 +3,27 @@ project(miniRT C)
 
 set(CMAKE_C_STANDARD 99)
 
+include_directories(includes)
 add_executable(miniRT
-        ft_ssplit.c
-        cylindr.c
-        normal_utils.c
-        get_next_line.c
-        objects.c
-        check.c
-        ft_atoi.c
-        get_next_line.h
-        get_next_line_utils.c
-        math_utils.c
-        bmp.c
-        ft_atof.c
-        minirt.h
-        parser.c
-        color_utils.c
-        cam_utils.c
-        put.c
-        libft/libft.h
+        srcs/ft_ssplit.c
+        srcs/cylindr.c
+        srcs/normal_utils.c
+        srcs/get_next_line.c
+        srcs/objects.c
+        srcs/check.c
+        srcs/ft_atoi.c
+        srcs/get_next_line_utils.c
+        srcs/math_utils.c
+        srcs/bmp.c
+        srcs/ft_atof.c
+        includes/minirt.h
+        srcs/parser.c
+        srcs/color_utils.c
+        srcs/cam_utils.c
+        srcs/put.c
+        includes/libft.h
+        includes/get_next_line.h
+        libmlx.dylib
         )
 
 
