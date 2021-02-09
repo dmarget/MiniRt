@@ -12,7 +12,8 @@
 
 #ifndef MINIRT_H
 # define MINIRT_H
-#include "mlx/mlx.h"
+//#include "mlx/mlx.h"
+#include "mlx2/mlx.h"
 #include <stdio.h>
 #include "libft/libft.h"
 #include <unistd.h>
@@ -54,7 +55,6 @@ typedef struct		s_res
 typedef struct		s_cam
 {
 	int				FOV;
-	int				flag;
 	t_vec			vec;
 	t_vec			nvec;
 }					t_cam;
@@ -82,9 +82,7 @@ typedef struct		s_objects
 	t_vec			xvec;
 	double			d;
 	double			h;
-	double			range;
 	t_color			color;
-	int				flag;
 }					t_obj;
 typedef struct		s_mini_rt
 {
@@ -96,6 +94,7 @@ typedef struct		s_mini_rt
 	t_amb           amb;
 	int 			fov;
 	double			intens;
+	double			v_dot;
 	t_color			color;
 	t_vec			head;
 	t_vec			tail;
@@ -117,9 +116,11 @@ typedef struct		s_mini_rt
 	t_data			img;
 	t_list			*list_light;
 }					t_mini_rt;
+double				ft_atof_rt(char *str,t_mini_rt *rt);
 t_vec				dot_matrix(t_vec r, t_vec u,t_vec n , t_vec d);
 t_vec				multi_vec(t_vec vec,double s);
 t_vec				vec_cross(t_vec one, t_vec two);
+int					ft_atoi_rt(char *str);
 double				dot_vec(t_vec one,t_vec two);
 t_vec				sub_vec(t_vec one,t_vec two);
 t_vec				sum_vec(t_vec one,t_vec two);
@@ -132,8 +133,6 @@ void				render(t_mini_rt *rt);
 t_vec				vector(double x,double y,int w,int h,double z);
 t_vec				cam_direction(t_mini_rt *rt,double x,double y);
 int					create_trgb(t_color color);
-t_color				color_dot(t_color color,double i);
-t_color				color_sum(t_color color1,t_color color2);
 t_color				color_dot_coe(t_color color1,t_color color2,double coe);
 t_color				color_double_coe(t_color color1,t_color color2,double coe);
 void				main_cam(t_mini_rt *rt);

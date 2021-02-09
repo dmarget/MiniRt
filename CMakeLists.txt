@@ -10,10 +10,12 @@ add_executable(miniRT
         get_next_line.c
         objects.c
         check.c
+        ft_atoi.c
         get_next_line.h
         get_next_line_utils.c
         math_utils.c
         bmp.c
+        ft_atof.c
         minirt.h
         parser.c
         color_utils.c
@@ -23,8 +25,8 @@ add_executable(miniRT
         )
 
 
-target_link_libraries(miniRT /Users/dmarget/miniRT/libft/libft.a
-        /Users/dmarget/miniRT/mlx/libmlx.a)
 #target_link_libraries(miniRT /Users/dmarget/miniRT/libft/libft.a
-#        /Users/dmarget/Downloads/miniRT-new/libmlx.dylib)
+#        /Users/dmarget/miniRT/mlx/libmlx.a)
+target_link_libraries(miniRT /Users/dmarget/miniRT/libft/libft.a
+        /Users/dmarget/Downloads/miniRT-new/libmlx.dylib)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework Appkit")

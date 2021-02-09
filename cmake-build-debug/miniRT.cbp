@@ -93,6 +93,12 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/cylindr.c">
 			<Option target="miniRT"/>
 		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_atof.c">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_atoi.c">
+			<Option target="miniRT"/>
+		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/ft_ssplit.c">
 			<Option target="miniRT"/>
 		</Unit>

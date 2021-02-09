@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/miniRT.dir/check.c.o"
   "CMakeFiles/miniRT.dir/color_utils.c.o"
   "CMakeFiles/miniRT.dir/cylindr.c.o"
+  "CMakeFiles/miniRT.dir/ft_atof.c.o"
+  "CMakeFiles/miniRT.dir/ft_atoi.c.o"
   "CMakeFiles/miniRT.dir/ft_ssplit.c.o"
   "CMakeFiles/miniRT.dir/get_next_line.c.o"
   "CMakeFiles/miniRT.dir/get_next_line_utils.c.o"

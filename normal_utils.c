@@ -18,7 +18,7 @@ void normal_cy(t_mini_rt *rt,t_obj *obj)
 	rt->n = multi_vec(vec_normalize(rt->n),-1);
 	rt->vn = obj->vec;
 	rt->vn_n = obj->d /2;
-	obj->flag = 1;
+//	obj->flag = 1;
 }
 int revers_normal(t_mini_rt *rt)
 {

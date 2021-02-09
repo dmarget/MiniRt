@@ -37,37 +37,42 @@ void inter_search(t_list *tmp,double t_max,t_mini_rt *rt,t_vec cam,t_vec dir)
 		tmp = tmp->next;
 	}
 }
+t_vec n_check(t_mini_rt *rt, t_vec n)
+{
+	rt->v_dot *= -1;
+	n = multi_vec(n, -1.0);
+	return (n);
+}
+t_vec nv_check(t_mini_rt *rt,t_vec n,t_vec p,t_light *ptr_l)
+{
+	n = multi_vec(n,-1.0);
+	rt->v_dot = dot_vec(n,sub_vec(p, ptr_l->vec));
+	return (n);
+}
 t_color 			light_trace(t_list  *tmp,t_mini_rt *rt,t_vec p,t_vec N,t_obj *obj)
 {
 	t_list  *tmp_l;
 	t_light *ptr_l;
+
 	tmp_l = rt->list_light;
-	double v_dot;
 	rt->color = color_double_coe(obj->color,rt->amb.color,rt->amb.range);
 	while (tmp_l)
 	{
 		rt->intens = 0;
 		ptr_l = tmp_l->content;
 		inter_search(tmp,0.9999,rt, p, sub_vec(p, ptr_l->vec));
-		v_dot = dot_vec(N, sub_vec(p, ptr_l->vec));
+		rt->v_dot = dot_vec(N, sub_vec(p, ptr_l->vec));
 		if(rt->main != NULL)
 		{
 			tmp_l = tmp_l->next;
 			continue ;
 		}
-		if (v_dot < 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3))
-		{
-			N = multi_vec(N,-1.0);
-			v_dot = dot_vec(N,sub_vec(p, ptr_l->vec));
-		}
-		if(obj->id == 4 && v_dot < 0)
-		{
-			v_dot *= -1;
-			N = multi_vec(N, -1.0);
-		}
-		if (v_dot > 0.0)
-				rt->intens = ptr_l->range * dot_vec(N, sub_vec(p, ptr_l->vec)) /
-							 (len_vec(N) * len_vec(sub_vec(p, ptr_l->vec)));
+		if (rt->v_dot < 0.0 && (obj->id == 2 || obj->id == 5 || obj->id == 3))
+			N = nv_check(rt,N,p,ptr_l);
+		if(obj->id == 4 && rt->v_dot < 0)
+			N = n_check(rt,N);
+		rt->v_dot > 0.0 ? rt->intens = ptr_l->range * dot_vec(N, sub_vec(p, ptr_l->vec)) /
+									   (len_vec(N) * len_vec(sub_vec(p, ptr_l->vec))) : 0;
 		rt->color = color_dot_coe(rt->color,ptr_l->color,rt->intens);
 		tmp_l = tmp_l->next;
 	}
@@ -85,7 +90,6 @@ int         TraceRay(t_mini_rt *rt,t_vec cam,t_vec dir)
 	color = create_trgb(light_trace(tmp,rt, rt->p,rt->n,rt->main));
 	return (color);
 }
-// -------------------
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 {
 	char	*dst;

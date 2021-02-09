@@ -278,6 +278,60 @@ cylindr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/cylindr.c.s
 .PHONY : cylindr.c.s
 
+ft_atof.o: ft_atof.c.o
+
+.PHONY : ft_atof.o
+
+# target to build an object file
+ft_atof.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.o
+.PHONY : ft_atof.c.o
+
+ft_atof.i: ft_atof.c.i
+
+.PHONY : ft_atof.i
+
+# target to preprocess a source file
+ft_atof.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.i
+.PHONY : ft_atof.c.i
+
+ft_atof.s: ft_atof.c.s
+
+.PHONY : ft_atof.s
+
+# target to generate assembly for a file
+ft_atof.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atof.c.s
+.PHONY : ft_atof.c.s
+
+ft_atoi.o: ft_atoi.c.o
+
+.PHONY : ft_atoi.o
+
+# target to build an object file
+ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.o
+.PHONY : ft_atoi.c.o
+
+ft_atoi.i: ft_atoi.c.i
+
+.PHONY : ft_atoi.i
+
+# target to preprocess a source file
+ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.i
+.PHONY : ft_atoi.c.i
+
+ft_atoi.s: ft_atoi.c.s
+
+.PHONY : ft_atoi.s
+
+# target to generate assembly for a file
+ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/ft_atoi.c.s
+.PHONY : ft_atoi.c.s
+
 ft_ssplit.o: ft_ssplit.c.o
 
 .PHONY : ft_ssplit.o
@@ -518,6 +572,12 @@ help:
 	@echo "... cylindr.o"
 	@echo "... cylindr.i"
 	@echo "... cylindr.s"
+	@echo "... ft_atof.o"
+	@echo "... ft_atof.i"
+	@echo "... ft_atof.s"
+	@echo "... ft_atoi.o"
+	@echo "... ft_atoi.i"
+	@echo "... ft_atoi.s"
 	@echo "... ft_ssplit.o"
 	@echo "... ft_ssplit.i"
 	@echo "... ft_ssplit.s"

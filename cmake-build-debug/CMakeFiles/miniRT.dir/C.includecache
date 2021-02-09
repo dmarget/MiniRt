@@ -26,6 +26,14 @@ minirt.h
 minirt.h
 /Users/dmarget/Downloads/miniRT-new/minirt.h
 
+/Users/dmarget/Downloads/miniRT-new/ft_atof.c
+minirt.h
+/Users/dmarget/Downloads/miniRT-new/minirt.h
+
+/Users/dmarget/Downloads/miniRT-new/ft_atoi.c
+minirt.h
+/Users/dmarget/Downloads/miniRT-new/minirt.h
+
 /Users/dmarget/Downloads/miniRT-new/get_next_line.h
 unistd.h
 -
@@ -52,9 +60,11 @@ minirt.h
 math.h
 -
 
+/Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
+
 /Users/dmarget/Downloads/miniRT-new/minirt.h
-mlx/mlx.h
-/Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+minilibx_mms_20200219/mlx.h
+/Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
 stdio.h
 -
 libft/libft.h
@@ -67,8 +77,6 @@ fcntl.h
 -
 math.h
 -
-
-/Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 
 /Users/dmarget/Downloads/miniRT-new/normal_utils.c
 minirt.h

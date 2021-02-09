@@ -4,28 +4,38 @@
 CMakeFiles/miniRT.dir/bmp.c.o
  /Users/dmarget/Downloads/miniRT-new/bmp.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/cam_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/cam_utils.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/check.c.o
  /Users/dmarget/Downloads/miniRT-new/check.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/color_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/color_utils.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/cylindr.c.o
  /Users/dmarget/Downloads/miniRT-new/cylindr.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
+CMakeFiles/miniRT.dir/ft_atof.c.o
+ /Users/dmarget/Downloads/miniRT-new/ft_atof.c
+ /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
+ /Users/dmarget/Downloads/miniRT-new/minirt.h
+CMakeFiles/miniRT.dir/ft_atoi.c.o
+ /Users/dmarget/Downloads/miniRT-new/ft_atoi.c
+ /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
+ /Users/dmarget/Downloads/miniRT-new/minirt.h
 CMakeFiles/miniRT.dir/ft_ssplit.c.o
  /Users/dmarget/Downloads/miniRT-new/ft_ssplit.c
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
@@ -38,26 +48,26 @@ CMakeFiles/miniRT.dir/get_next_line_utils.c.o
 CMakeFiles/miniRT.dir/math_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
  /Users/dmarget/Downloads/miniRT-new/math_utils.c
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
 CMakeFiles/miniRT.dir/normal_utils.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
  /Users/dmarget/Downloads/miniRT-new/normal_utils.c
 CMakeFiles/miniRT.dir/objects.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
  /Users/dmarget/Downloads/miniRT-new/objects.c
 CMakeFiles/miniRT.dir/parser.c.o
  /Users/dmarget/Downloads/miniRT-new/get_next_line.h
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
  /Users/dmarget/Downloads/miniRT-new/parser.c
 CMakeFiles/miniRT.dir/put.c.o
  /Users/dmarget/Downloads/miniRT-new/libft/libft.h
+ /Users/dmarget/Downloads/miniRT-new/minilibx_mms_20200219/mlx.h
  /Users/dmarget/Downloads/miniRT-new/minirt.h
- /Users/dmarget/Downloads/miniRT-new/mlx/mlx.h
  /Users/dmarget/Downloads/miniRT-new/put.c

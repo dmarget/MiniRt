@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dmarget/Downloads/miniRT-new/check.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/check.c.o"
   "/Users/dmarget/Downloads/miniRT-new/color_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/color_utils.c.o"
   "/Users/dmarget/Downloads/miniRT-new/cylindr.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/cylindr.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/ft_atof.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_atof.c.o"
+  "/Users/dmarget/Downloads/miniRT-new/ft_atoi.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_atoi.c.o"
   "/Users/dmarget/Downloads/miniRT-new/ft_ssplit.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/ft_ssplit.c.o"
   "/Users/dmarget/Downloads/miniRT-new/get_next_line.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/get_next_line.c.o"
   "/Users/dmarget/Downloads/miniRT-new/get_next_line_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/get_next_line_utils.c.o"
