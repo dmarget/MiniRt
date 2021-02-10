@@ -125,16 +125,34 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/minirt.c">
+			<Option target="miniRT"/>
+		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/objects.c">
 			<Option target="miniRT"/>
 		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parse_obj.c">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parse_utils.c">
+			<Option target="miniRT"/>
+		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parser.c">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/put.c">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/square.c">
+			<Option target="miniRT"/>
+		</Unit>
+		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c">
 			<Option target="miniRT"/>
 		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/CMakeLists.txt">

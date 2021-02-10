@@ -440,6 +440,33 @@ srcs/math_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/math_utils.c.s
 .PHONY : srcs/math_utils.c.s
 
+srcs/minirt.o: srcs/minirt.c.o
+
+.PHONY : srcs/minirt.o
+
+# target to build an object file
+srcs/minirt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/minirt.c.o
+.PHONY : srcs/minirt.c.o
+
+srcs/minirt.i: srcs/minirt.c.i
+
+.PHONY : srcs/minirt.i
+
+# target to preprocess a source file
+srcs/minirt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/minirt.c.i
+.PHONY : srcs/minirt.c.i
+
+srcs/minirt.s: srcs/minirt.c.s
+
+.PHONY : srcs/minirt.s
+
+# target to generate assembly for a file
+srcs/minirt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/minirt.c.s
+.PHONY : srcs/minirt.c.s
+
 srcs/normal_utils.o: srcs/normal_utils.c.o
 
 .PHONY : srcs/normal_utils.o
@@ -493,6 +520,60 @@ srcs/objects.s: srcs/objects.c.s
 srcs/objects.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/objects.c.s
 .PHONY : srcs/objects.c.s
+
+srcs/parse_obj.o: srcs/parse_obj.c.o
+
+.PHONY : srcs/parse_obj.o
+
+# target to build an object file
+srcs/parse_obj.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_obj.c.o
+.PHONY : srcs/parse_obj.c.o
+
+srcs/parse_obj.i: srcs/parse_obj.c.i
+
+.PHONY : srcs/parse_obj.i
+
+# target to preprocess a source file
+srcs/parse_obj.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_obj.c.i
+.PHONY : srcs/parse_obj.c.i
+
+srcs/parse_obj.s: srcs/parse_obj.c.s
+
+.PHONY : srcs/parse_obj.s
+
+# target to generate assembly for a file
+srcs/parse_obj.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_obj.c.s
+.PHONY : srcs/parse_obj.c.s
+
+srcs/parse_utils.o: srcs/parse_utils.c.o
+
+.PHONY : srcs/parse_utils.o
+
+# target to build an object file
+srcs/parse_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_utils.c.o
+.PHONY : srcs/parse_utils.c.o
+
+srcs/parse_utils.i: srcs/parse_utils.c.i
+
+.PHONY : srcs/parse_utils.i
+
+# target to preprocess a source file
+srcs/parse_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_utils.c.i
+.PHONY : srcs/parse_utils.c.i
+
+srcs/parse_utils.s: srcs/parse_utils.c.s
+
+.PHONY : srcs/parse_utils.s
+
+# target to generate assembly for a file
+srcs/parse_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/parse_utils.c.s
+.PHONY : srcs/parse_utils.c.s
 
 srcs/parser.o: srcs/parser.c.o
 
@@ -548,6 +629,87 @@ srcs/put.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put.c.s
 .PHONY : srcs/put.c.s
 
+srcs/put_utils.o: srcs/put_utils.c.o
+
+.PHONY : srcs/put_utils.o
+
+# target to build an object file
+srcs/put_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put_utils.c.o
+.PHONY : srcs/put_utils.c.o
+
+srcs/put_utils.i: srcs/put_utils.c.i
+
+.PHONY : srcs/put_utils.i
+
+# target to preprocess a source file
+srcs/put_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put_utils.c.i
+.PHONY : srcs/put_utils.c.i
+
+srcs/put_utils.s: srcs/put_utils.c.s
+
+.PHONY : srcs/put_utils.s
+
+# target to generate assembly for a file
+srcs/put_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put_utils.c.s
+.PHONY : srcs/put_utils.c.s
+
+srcs/square.o: srcs/square.c.o
+
+.PHONY : srcs/square.o
+
+# target to build an object file
+srcs/square.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.o
+.PHONY : srcs/square.c.o
+
+srcs/square.i: srcs/square.c.i
+
+.PHONY : srcs/square.i
+
+# target to preprocess a source file
+srcs/square.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.i
+.PHONY : srcs/square.c.i
+
+srcs/square.s: srcs/square.c.s
+
+.PHONY : srcs/square.s
+
+# target to generate assembly for a file
+srcs/square.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.s
+.PHONY : srcs/square.c.s
+
+srcs/utils_two.o: srcs/utils_two.c.o
+
+.PHONY : srcs/utils_two.o
+
+# target to build an object file
+srcs/utils_two.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/utils_two.c.o
+.PHONY : srcs/utils_two.c.o
+
+srcs/utils_two.i: srcs/utils_two.c.i
+
+.PHONY : srcs/utils_two.i
+
+# target to preprocess a source file
+srcs/utils_two.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/utils_two.c.i
+.PHONY : srcs/utils_two.c.i
+
+srcs/utils_two.s: srcs/utils_two.c.s
+
+.PHONY : srcs/utils_two.s
+
+# target to generate assembly for a file
+srcs/utils_two.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/utils_two.c.s
+.PHONY : srcs/utils_two.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -590,18 +752,36 @@ help:
 	@echo "... srcs/math_utils.o"
 	@echo "... srcs/math_utils.i"
 	@echo "... srcs/math_utils.s"
+	@echo "... srcs/minirt.o"
+	@echo "... srcs/minirt.i"
+	@echo "... srcs/minirt.s"
 	@echo "... srcs/normal_utils.o"
 	@echo "... srcs/normal_utils.i"
 	@echo "... srcs/normal_utils.s"
 	@echo "... srcs/objects.o"
 	@echo "... srcs/objects.i"
 	@echo "... srcs/objects.s"
+	@echo "... srcs/parse_obj.o"
+	@echo "... srcs/parse_obj.i"
+	@echo "... srcs/parse_obj.s"
+	@echo "... srcs/parse_utils.o"
+	@echo "... srcs/parse_utils.i"
+	@echo "... srcs/parse_utils.s"
 	@echo "... srcs/parser.o"
 	@echo "... srcs/parser.i"
 	@echo "... srcs/parser.s"
 	@echo "... srcs/put.o"
 	@echo "... srcs/put.i"
 	@echo "... srcs/put.s"
+	@echo "... srcs/put_utils.o"
+	@echo "... srcs/put_utils.i"
+	@echo "... srcs/put_utils.s"
+	@echo "... srcs/square.o"
+	@echo "... srcs/square.i"
+	@echo "... srcs/square.s"
+	@echo "... srcs/utils_two.o"
+	@echo "... srcs/utils_two.i"
+	@echo "... srcs/utils_two.s"
 .PHONY : help
 
 
