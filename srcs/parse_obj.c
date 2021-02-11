@@ -35,7 +35,7 @@ void		ft_parse_pl(char *line, t_mini_rt *rt)
 	pl->color.g = ft_atoi(rt->split_rgb[1]);
 	pl->color.b = ft_atoi(rt->split_rgb[2]);
 	clear_arr(&rt->split_rgb);
-	check_rgb(&pl->color.r, &pl->color.r, &pl->color.r);
+	check_rgb(&pl->color.r, &pl->color.r, &pl->color.r, rt);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(pl));
 	clear_arr(&rt->split);
 }
@@ -61,7 +61,7 @@ void		ft_parse_sp(char *line, t_mini_rt *rt)
 	sp->color.g = ft_atoi_rt(rt->split_rgb[1], rt);
 	sp->color.b = ft_atoi_rt(rt->split_rgb[2], rt);
 	clear_arr(&rt->split_rgb);
-	check_rgb(&sp->color.r, &sp->color.r, &sp->color.r);
+	check_rgb(&sp->color.r, &sp->color.r, &sp->color.r, rt);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(sp));
 	clear_arr(&rt->split);
 }
@@ -88,7 +88,7 @@ void		ft_parse_sq(char *line, t_mini_rt *rt)
 	sq->color.r = ft_atoi_rt(rt->split_rgb[0], rt);
 	sq->color.g = ft_atoi_rt(rt->split_rgb[1], rt);
 	sq->color.b = ft_atoi_rt(rt->split_rgb[2], rt);
-	check_rgb(&sq->color.r, &sq->color.r, &sq->color.r);
+	check_rgb(&sq->color.r, &sq->color.r, &sq->color.r, rt);
 	clear_arr(&rt->split_rgb);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(sq));
 	clear_arr(&rt->split);
@@ -116,7 +116,7 @@ void		ft_parse_cy(char *line, t_mini_rt *rt)
 	valid_d(&cy->h, rt);
 	rt->split_rgb = ft_split(rt->split[5], ',');
 	cy->color = parse_rgb(rt);
-	check_rgb(&cy->color.r, &cy->color.r, &cy->color.r);
+	check_rgb(&cy->color.r, &cy->color.r, &cy->color.r, rt);
 	clear_arr(&rt->split_rgb);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(cy));
 	clear_arr(&rt->split);
@@ -145,7 +145,7 @@ void		ft_parse_tr(char *line, t_mini_rt *rt)
 	tr->color.r = ft_atoi_rt(rt->split_rgb[0], rt);
 	tr->color.g = ft_atoi_rt(rt->split_rgb[1], rt);
 	tr->color.b = ft_atoi_rt(rt->split_rgb[2], rt);
-	check_rgb(&tr->color.r, &tr->color.r, &tr->color.r);
+	check_rgb(&tr->color.r, &tr->color.r, &tr->color.r, rt);
 	clear_arr(&rt->split_rgb);
 	ft_lstadd_back(&rt->list_obj, ft_lstnew(tr));
 	clear_arr(&rt->split);
