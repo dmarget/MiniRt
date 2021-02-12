@@ -79,26 +79,26 @@ static	t_obj	get_vector(t_vec ray, t_obj *sq)
 //	if (eq.t1 > 0)
 //		return eq.t1;
 //}
-double			square_equal(t_obj *square, t_vec ori, t_vec dir)
-{
-	t_equeal	eq;
-	t_obj		tr;
-	t_vec		hit_vec;
-	t_vec		tr_ori;
-	t_vec		tr_dir;
-
-	eq.k1 = plane_equal(square, ori, dir);
-	if (eq.k1 != INFINITY)
-	{
-		tr = get_vector(dir, square);
-		tr_ori = sub_vec(tr.vec, tr.svec);
-		tr_dir = sub_vec(tr.vec, tr.xvec);
-		hit_vec = sub_vec(tr.vec, sum_vec(ori, multi_vec(dir, eq.k1)));
-		eq.t1 = dot_vec(vec_normalize(tr_ori), hit_vec);
-		eq.t2 = dot_vec(vec_normalize(tr_dir), hit_vec);
-		if (0.0 <= eq.t1 && eq.t1 <= len_vec(tr_ori) &&
-			0.0 <= eq.t2 && eq.t2 <= len_vec(tr_dir))
-			return (eq.t1 > eq.t2 ? eq.t2 : eq.t1);
-	}
-	return (INFINITY);
-}
+//double			square_equal(t_obj *square, t_vec ori, t_vec dir)
+//{
+//	t_equeal	eq;
+//	t_obj		tr;
+//	t_vec		hit_vec;
+//	t_vec		tr_ori;
+//	t_vec		tr_dir;
+//
+//	eq.k1 = plane_equal(square, ori, dir);
+//	if (eq.k1 != INFINITY)
+//	{
+//		tr = get_vector(dir, square);
+//		tr_ori = sub_vec(tr.vec, tr.svec);
+//		tr_dir = sub_vec(tr.vec, tr.xvec);
+//		hit_vec = sub_vec(tr.vec, sum_vec(ori, multi_vec(dir, eq.k1)));
+//		eq.t1 = dot_vec(vec_normalize(tr_ori), hit_vec);
+//		eq.t2 = dot_vec(vec_normalize(tr_dir), hit_vec);
+//		if (0.0 <= eq.t1 && eq.t1 <= len_vec(tr_ori) &&
+//			0.0 <= eq.t2 && eq.t2 <= len_vec(tr_dir))
+//			return (eq.t1 > eq.t2 ? eq.t2 : eq.t1);
+//	}
+//	return (INFINITY);
+//}

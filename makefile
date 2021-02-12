@@ -42,6 +42,7 @@ $(NAME):    $(OBJ) mlx libft/libft.a
 clean:
 	-rm -f $(OBJ)
 fclean:     clean
+	make -C ./libft fclean
 	-rm -f $(NAME)
 	-rm -f *.bmp
 re:         fclean all
