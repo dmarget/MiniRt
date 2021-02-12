@@ -61,14 +61,11 @@ void		ft_parse_cam(char *line, t_mini_rt *rt)
 		error("Invalid arguments in cam", rt);
 	if (*line == '\0')
 		return ;
-	rt->split_xyz = ft_split(rt->split[1], ',');
-	tmp->vec.x = ft_atof_rt(rt->split_xyz[0], rt);
-	tmp->vec.y = ft_atof_rt(rt->split_xyz[1], rt);
-	tmp->vec.z = ft_atof_rt(rt->split_xyz[2], rt);
-//	tmp->vec = parse_vec(rt);
+	check_arg((rt->split_xyz = ft_split(rt->split[1], ',')), rt);
+	tmp->vec = parse_vec(rt);
 	clear_arr(&rt->split_xyz);
-	rt->split_xyz = ft_split(rt->split[2], ',');
-	tmp->nvec = parse_vec(rt);
+	check_arg((rt->split_xyz = ft_split(rt->split[2], ',')), rt);
+	tmp->nvec = parse_nvec(rt);
 	clear_arr(&rt->split_xyz);
 	check_vec(&tmp->nvec.x, &tmp->nvec.y, &tmp->nvec.z, rt);
 	tmp->fov = ft_atoi_rt(rt->split[3], rt);
@@ -86,13 +83,13 @@ void		ft_parse_light(char *line, t_mini_rt *rt)
 		error("Malloc is dead,you kill him(", rt);
 	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in light", rt);
-	rt->split_xyz = ft_split(rt->split[1], ',');
+	check_arg((rt->split_xyz = ft_split(rt->split[1], ',')), rt);
 	tmp->vec = parse_vec(rt);
 	clear_arr(&rt->split_xyz);
 	tmp->range = ft_atof_rt(rt->split[2], rt);
 	if (tmp->range > 1 || tmp->range < -1)
 		error("Invalid light range", rt);
-	rt->split_rgb = ft_split(rt->split[3], ',');
+	check_arg((rt->split_rgb = ft_split(rt->split[3], ',')), rt);
 	tmp->color.r = ft_atoi_rt(rt->split_rgb[0], rt);
 	tmp->color.g = ft_atoi_rt(rt->split_rgb[1], rt);
 	tmp->color.b = ft_atoi_rt(rt->split_rgb[2], rt);
@@ -123,6 +120,8 @@ void		ft_parser_rt(char *line, t_mini_rt *rt)
 		ft_parse_cy(line, rt);
 	else if (line[rt->i] == 't' && line[rt->i + 1] == 'r')
 		ft_parse_tr(line, rt);
-	else
+	else if (ft_strlen(line) == 0)
 		return ;
+	else
+		error("Invalid argument", rt);
 }

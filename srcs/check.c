@@ -34,11 +34,11 @@ int			ft_check_rt(char *str)
 void		check_rgb(int *r, int *g, int *b, t_mini_rt *rt)
 {
 	if (*r > 255)
-		*r = 255;
+		error("Invalid color", rt);
 	if (*g > 255)
-		*r = 255;
+		error("Invalid color", rt);
 	if (*b > 255)
-		*b = 255;
+		error("Invalid color", rt);
 	if (*r < 0)
 		error("Invalid color", rt);
 	if (*g < 0)

@@ -30,7 +30,7 @@ void		check_cam(t_mini_rt *rt)
 
 	tmp = rt->list_cam;
 	if (tmp == NULL)
-		error("No cam's", rt);
+		error("No cam's or Invalid read", rt);
 }
 
 void		ft_change_cam(t_mini_rt *rt)

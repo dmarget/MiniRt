@@ -37,7 +37,8 @@ void			ft_make_file(t_list **list, int size, t_mini_rt *rt)
 
 	tmp = *list;
 	j = -1;
-	file = calloc(size + 1, sizeof(char *));
+	if (!(file = calloc(size + 1, sizeof(char *))))
+		error("Invalid read", rt);
 	while (tmp)
 	{
 		file[++j] = tmp->content;

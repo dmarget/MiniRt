@@ -29,7 +29,7 @@ double		ft_atof_rt(char *str, t_mini_rt *rt)
 	if (*str == '.')
 		str++;
 	if (*str == '.')
-		error("Invalid argument",rt);
+		error("Invalid argument", rt);
 	res2 = (double)ft_atoi_rt(str, rt);
 	l = ft_strlen(str);
 	while (l--)
