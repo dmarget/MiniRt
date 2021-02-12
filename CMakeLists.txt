@@ -22,7 +22,6 @@ add_executable(miniRT
         srcs/cam_utils.c
         srcs/put.c
         includes/libft.h
-        srcs/square.c
         includes/get_next_line.h
         libmlx.dylib
         srcs/parse_utils.c

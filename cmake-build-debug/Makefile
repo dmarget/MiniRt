@@ -656,33 +656,6 @@ srcs/put_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/put_utils.c.s
 .PHONY : srcs/put_utils.c.s
 
-srcs/square.o: srcs/square.c.o
-
-.PHONY : srcs/square.o
-
-# target to build an object file
-srcs/square.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.o
-.PHONY : srcs/square.c.o
-
-srcs/square.i: srcs/square.c.i
-
-.PHONY : srcs/square.i
-
-# target to preprocess a source file
-srcs/square.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.i
-.PHONY : srcs/square.c.i
-
-srcs/square.s: srcs/square.c.s
-
-.PHONY : srcs/square.s
-
-# target to generate assembly for a file
-srcs/square.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniRT.dir/build.make CMakeFiles/miniRT.dir/srcs/square.c.s
-.PHONY : srcs/square.c.s
-
 srcs/utils_two.o: srcs/utils_two.c.o
 
 .PHONY : srcs/utils_two.o
@@ -776,9 +749,6 @@ help:
 	@echo "... srcs/put_utils.o"
 	@echo "... srcs/put_utils.i"
 	@echo "... srcs/put_utils.s"
-	@echo "... srcs/square.o"
-	@echo "... srcs/square.i"
-	@echo "... srcs/square.s"
 	@echo "... srcs/utils_two.o"
 	@echo "... srcs/utils_two.i"
 	@echo "... srcs/utils_two.s"

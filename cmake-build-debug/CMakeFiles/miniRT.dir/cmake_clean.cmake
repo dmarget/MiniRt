@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/miniRT.dir/srcs/parser.c.o"
   "CMakeFiles/miniRT.dir/srcs/put.c.o"
   "CMakeFiles/miniRT.dir/srcs/put_utils.c.o"
-  "CMakeFiles/miniRT.dir/srcs/square.c.o"
   "CMakeFiles/miniRT.dir/srcs/utils_two.c.o"
   "miniRT"
   "miniRT.pdb"

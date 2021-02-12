@@ -19,13 +19,14 @@ void		normal(t_mini_rt *rt, t_obj *ptr_sp)
 	rt->n = vec_normalize(rt->n);
 }
 
-void        normal_tr(t_mini_rt *rt, t_obj *obj)
+void		normal_tr(t_mini_rt *rt, t_obj *obj)
 {
-	double  t;
+	double	t;
 
 	t = rt->t_min;
-	rt->p = sum_vec(rt->tail, multi_vec(rt->head,t * 0.9999));
-	rt->n = vec_cross(sub_vec(obj->vec, obj->nvec), sub_vec(obj->vec, obj->xvec));
+	rt->p = sum_vec(rt->tail, multi_vec(rt->head, t * 0.9999));
+	rt->n = vec_cross(sub_vec(obj->vec, obj->nvec),\
+		sub_vec(obj->vec, obj->xvec));
 	rt->n = vec_normalize(rt->n);
 }
 

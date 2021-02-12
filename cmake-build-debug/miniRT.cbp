@@ -149,9 +149,6 @@
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/square.c">
-			<Option target="miniRT"/>
-		</Unit>
 		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c">
 			<Option target="miniRT"/>
 		</Unit>

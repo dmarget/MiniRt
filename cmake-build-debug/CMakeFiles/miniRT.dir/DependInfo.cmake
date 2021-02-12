@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dmarget/Downloads/miniRT-new/srcs/parser.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/parser.c.o"
   "/Users/dmarget/Downloads/miniRT-new/srcs/put.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/put.c.o"
   "/Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/put_utils.c.o"
-  "/Users/dmarget/Downloads/miniRT-new/srcs/square.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/square.c.o"
   "/Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c" "/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/srcs/utils_two.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

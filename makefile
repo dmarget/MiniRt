@@ -18,7 +18,6 @@ SRC     :=  $(addprefix srcs/,      \
             objects.c         \
             parser.c      \
             put.c	\
-            square.c \
             parse_utils.c \
             utils_two.c\
             minirt.c\

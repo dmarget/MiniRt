@@ -31,23 +31,23 @@ double			sphere_equal(t_obj *tmp, t_vec ori, t_vec dir)
 		return (eq.t1);
 }
 
-double square_equal(t_obj *square,t_vec ori,t_vec dir)
+double			square_equal(t_obj *square, t_vec ori, t_vec dir)
 {
-	t_equeal 	eq;
-	t_vec	d;
+	t_equeal	eq;
+	t_vec		d;
 
-	eq.k1 = dot_vec(sub_vec(square->vec,ori), vec_normalize(square->nvec));
+	eq.k1 = dot_vec(sub_vec(square->vec, ori), vec_normalize(square->nvec));
 	eq.k2 = dot_vec(dir, vec_normalize(square->nvec));
 	if (eq.k2 == 0 || (eq.k1 < 0 && eq.k2 < 0) || (eq.k1 > 0 && eq.k2 > 0))
 		return (INFINITY);
 	eq.t1 = eq.k1 / eq.k2 * -1.0;
-	d = sub_vec(square->vec,sum_vec(multi_vec(dir, eq.t1), ori));
+	d = sub_vec(square->vec, sum_vec(multi_vec(dir, eq.t1), ori));
 	eq.t2 = square->d / 2;
 	if (fabs(d.x) > eq.t2 || fabs(d.y) > eq.t2 || fabs(d.z) > eq.t2)
 		return (INFINITY);
 	if (eq.t1 > 0)
-		return eq.t1;
-	return INFINITY;
+		return (eq.t1);
+	return (INFINITY);
 }
 
 double			triangle_equal(t_obj *triangle, t_vec ori, t_vec dir)
