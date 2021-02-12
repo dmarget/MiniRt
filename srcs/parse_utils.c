@@ -39,9 +39,9 @@ t_vec		parse_vec(t_mini_rt *rt)
 {
 	t_vec	vec;
 
-	vec.x = ft_atof_rt(rt->split_xyz[0], rt);
-	vec.y = ft_atof_rt(rt->split_xyz[1], rt);
-	vec.z = ft_atof_rt(rt->split_xyz[2], rt);
+	vec.x = ft_atof_rt(rt->line_xyz[0], rt);
+	vec.y = ft_atof_rt(rt->line_xyz[1], rt);
+	vec.z = ft_atof_rt(rt->line_xyz[2], rt);
 	return (vec);
 }
 

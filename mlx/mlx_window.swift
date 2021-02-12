@@ -342,7 +342,7 @@ public class MlxWin
 
   public func clearWin()
   {
-	/// discard previous put_images, doClear become first operation in next render pass.
+	/// discard previous images_main, doClear become first operation in next render pass.
 	var i = 0
 	while i < texture_list_count
 	{

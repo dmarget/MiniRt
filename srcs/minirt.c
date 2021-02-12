@@ -97,7 +97,7 @@ int				main(int argc, char **argv)
 	ft_start_parse_rt(argv[1], rt);
 	check_cam(rt);
 	valid(rt);
-	put_images(rt);
+	images_main(rt);
 	free_all(rt);
 	exit(0);
 }

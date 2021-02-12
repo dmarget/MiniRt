@@ -53,8 +53,8 @@ t_color		parse_rgb(t_mini_rt *rt)
 {
 	t_color	color;
 
-	color.r = ft_atoi_rt(rt->split_rgb[0], rt);
-	color.g = ft_atoi_rt(rt->split_rgb[1], rt);
-	color.b = ft_atoi_rt(rt->split_rgb[2], rt);
+	color.r = ft_atoi_rt(rt->line_rgb[0], rt);
+	color.g = ft_atoi_rt(rt->line_rgb[1], rt);
+	color.b = ft_atoi_rt(rt->line_rgb[2], rt);
 	return (color);
 }

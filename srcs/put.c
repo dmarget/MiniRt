@@ -12,7 +12,7 @@
 
 #include "minirt.h"
 
-void		inter_search(double t_max, t_mini_rt *rt, t_vec cam, t_vec dir)
+void		inter_obj(double t_max, t_mini_rt *rt, t_vec cam, t_vec dir)
 {
 	t_obj	*obj;
 	double	t;
@@ -21,6 +21,7 @@ void		inter_search(double t_max, t_mini_rt *rt, t_vec cam, t_vec dir)
 	tmp_t = rt->tmp_t;
 	rt->t_min = INFINITY;
 	rt->main = NULL;
+	t = INFINITY;
 	while (tmp_t)
 	{
 		obj = tmp_t->content;
@@ -49,7 +50,7 @@ t_color		light_trace(t_mini_rt *rt, t_vec p, t_obj *obj)
 	{
 		rt->intens = 0;
 		ptr_l = tmp_l->content;
-		inter_search(0.9999, rt, p, sub_vec(p, ptr_l->vec));
+		inter_obj(0.9999, rt, p, sub_vec(p, ptr_l->vec));
 		rt->v_dot = dot_vec(rt->n, sub_vec(p, ptr_l->vec));
 		if (rt->main != NULL)
 		{
@@ -74,7 +75,7 @@ int			traceray(t_mini_rt *rt, t_vec cam, t_vec dir)
 
 	tmp = rt->list_obj;
 	rt->tmp_t = tmp;
-	inter_search(INFINITY, rt, cam, dir);
+	inter_obj(INFINITY, rt, cam, dir);
 	if (rt->main == NULL)
 		return (0x00000000);
 	find_normal(rt, rt->main);
@@ -104,7 +105,7 @@ void		render(t_mini_rt *rt)
 	mlx_put_image_to_window(rt->mlx, rt->win, rt->img.img, 0, 0);
 }
 
-void		put_images(t_mini_rt *rt)
+void		images_main(t_mini_rt *rt)
 {
 	rt->tmp = rt->list_cam;
 	main_cam(rt);

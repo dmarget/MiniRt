@@ -41,13 +41,13 @@ void		ft_parse_amb(char *line, t_mini_rt *rt)
 	rt->amb.range = ft_atof_rt(rt->split[1], rt);
 	if (rt->amb.range < 0 || rt->amb.range > 1)
 		error("Invalid range ambient", rt);
-	rt->split_rgb = ft_split(rt->split[2], ',');
-	rt->amb.color.r = ft_atoi_rt(rt->split_rgb[0], rt);
-	rt->amb.color.g = ft_atoi_rt(rt->split_rgb[1], rt);
-	rt->amb.color.b = ft_atoi_rt(rt->split_rgb[2], rt);
+	rt->line_rgb = ft_split(rt->split[2], ',');
+	rt->amb.color.r = ft_atoi_rt(rt->line_rgb[0], rt);
+	rt->amb.color.g = ft_atoi_rt(rt->line_rgb[1], rt);
+	rt->amb.color.b = ft_atoi_rt(rt->line_rgb[2], rt);
 	rt->amb.flag = 1;
 	check_rgb(&rt->amb.color.r, &rt->amb.color.g, &rt->amb.color.b, rt);
-	clear_arr(&rt->split_rgb);
+	clear_arr(&rt->line_rgb);
 	clear_arr(&rt->split);
 }
 
@@ -61,12 +61,12 @@ void		ft_parse_cam(char *line, t_mini_rt *rt)
 		error("Invalid arguments in cam", rt);
 	if (*line == '\0')
 		return ;
-	check_arg((rt->split_xyz = ft_split(rt->split[1], ',')), rt);
+	check_arg((rt->line_xyz = ft_split(rt->split[1], ',')), rt);
 	tmp->vec = parse_vec(rt);
-	clear_arr(&rt->split_xyz);
-	check_arg((rt->split_xyz = ft_split(rt->split[2], ',')), rt);
+	clear_arr(&rt->line_xyz);
+	check_arg((rt->line_xyz = ft_split(rt->split[2], ',')), rt);
 	tmp->nvec = parse_nvec(rt);
-	clear_arr(&rt->split_xyz);
+	clear_arr(&rt->line_xyz);
 	check_vec(&tmp->nvec.x, &tmp->nvec.y, &tmp->nvec.z, rt);
 	tmp->fov = ft_atoi_rt(rt->split[3], rt);
 	if (tmp->fov < 1 || tmp->fov > 180)
@@ -83,17 +83,17 @@ void		ft_parse_light(char *line, t_mini_rt *rt)
 		error("Malloc is dead,you kill him(", rt);
 	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in light", rt);
-	check_arg((rt->split_xyz = ft_split(rt->split[1], ',')), rt);
+	check_arg((rt->line_xyz = ft_split(rt->split[1], ',')), rt);
 	tmp->vec = parse_vec(rt);
-	clear_arr(&rt->split_xyz);
+	clear_arr(&rt->line_xyz);
 	tmp->range = ft_atof_rt(rt->split[2], rt);
 	if (tmp->range > 1 || tmp->range < -1)
 		error("Invalid light range", rt);
-	check_arg((rt->split_rgb = ft_split(rt->split[3], ',')), rt);
-	tmp->color.r = ft_atoi_rt(rt->split_rgb[0], rt);
-	tmp->color.g = ft_atoi_rt(rt->split_rgb[1], rt);
-	tmp->color.b = ft_atoi_rt(rt->split_rgb[2], rt);
-	clear_arr(&rt->split_rgb);
+	check_arg((rt->line_rgb = ft_split(rt->split[3], ',')), rt);
+	tmp->color.r = ft_atoi_rt(rt->line_rgb[0], rt);
+	tmp->color.g = ft_atoi_rt(rt->line_rgb[1], rt);
+	tmp->color.b = ft_atoi_rt(rt->line_rgb[2], rt);
+	clear_arr(&rt->line_rgb);
 	check_rgb(&tmp->color.r, &tmp->color.r, &tmp->color.r, rt);
 	ft_lstadd_back(&rt->list_light, ft_lstnew(tmp));
 	clear_arr(&rt->split);

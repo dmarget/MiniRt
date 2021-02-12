@@ -97,8 +97,8 @@ typedef struct		s_mini_rt
 {
 	int				i;
 	char			**split;
-	char			**split_rgb;
-	char			**split_xyz;
+	char			**line_rgb;
+	char			**line_xyz;
 	t_res			res;
 	t_amb			amb;
 	int				fov;
@@ -166,7 +166,7 @@ t_color				color_dot_coe(t_color color1, t_color color2, double coe);
 t_color				color_double_coe(t_color color1,\
 					t_color color2, double coe);
 void				main_cam(t_mini_rt *rt);
-void				put_images(t_mini_rt *rt);
+void				images_main(t_mini_rt *rt);
 int					revers_normal(t_mini_rt *rt);
 int					ft_atoi_rt(char *str, t_mini_rt *rt);
 void				free_all(t_mini_rt *rt);
@@ -192,5 +192,4 @@ double				sphere_equal(t_obj *tmp, t_vec ori, t_vec dir);
 double				triangle_equal(t_obj *triangle, t_vec ori, t_vec dir);
 double				plane_equal(t_obj *plane, t_vec ori, t_vec dir);
 double				square_equal(t_obj *square, t_vec ori, t_vec dir);
-//double				square_equal(t_obj *square, t_vec ori, t_vec dir, t_mini_rt *rt);
 #endif
