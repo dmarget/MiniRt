@@ -112,6 +112,7 @@ typedef struct		s_mini_rt
 	double			t_min;
 	t_vec			n;
 	int				flag;
+	t_res			r;
 	t_vec			vn;
 	double			vn_n;
 	t_vec			p;
@@ -121,9 +122,12 @@ typedef struct		s_mini_rt
 	t_list			*list_obj;
 	t_list			*list_cam;
 	void			*mlx;
+	void			*mlx_bmp;
+	void			*win_bmp;
 	void			*win;
 	t_list			*main_c;
 	t_data			img;
+	t_data			img_bmp;
 	t_list			*list_light;
 }					t_mini_rt;
 
@@ -136,6 +140,7 @@ void				ft_parse_sq(char *line, t_mini_rt *rt);
 void				ft_parse_cy(char *line, t_mini_rt *rt);
 void				ft_parse_tr(char *line, t_mini_rt *rt);
 void				check_arg(char **str, t_mini_rt *rt);
+int					traceray(t_mini_rt *rt, t_vec cam, t_vec dir);
 double				ft_atof_rt(char *str, t_mini_rt *rt);
 t_vec				dot_matrix(t_vec r, t_vec u, t_vec n, t_vec d);
 void				ft_start_parse_rt(char *map, t_mini_rt *rt);

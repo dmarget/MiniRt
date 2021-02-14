@@ -41,7 +41,7 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 {
 	int		i;
 	int		k;
-	int		s;
+	long long		s;
 
 	s = 0;
 	k = 1;
@@ -56,6 +56,8 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		s = s * 10 + str[i] - '0';
+		if (i > 7)
+			break;
 		i++;
 		if (over(s))
 			return (s * k);

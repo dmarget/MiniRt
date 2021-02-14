@@ -67,7 +67,6 @@ t_color		light_trace(t_mini_rt *rt, t_vec p, t_obj *obj)
 	}
 	return (rt->color);
 }
-
 int			traceray(t_mini_rt *rt, t_vec cam, t_vec dir)
 {
 	t_list	*tmp;

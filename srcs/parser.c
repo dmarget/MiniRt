@@ -21,9 +21,19 @@ void		ft_parse_res(char *line, t_mini_rt *rt)
 		return ;
 	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 3)
 		error("Invalid number argument in resolution", rt);
+	if (ft_strlen(rt->split[1]) == 0 && ft_atoi_rt(rt->split[1], rt) == 0)
+		error("You invalid", rt);
 	rt->res.x = ft_atoi_rt(rt->split[1], rt);
 	rt->res.y = ft_atoi_rt(rt->split[2], rt);
+	rt->r.x = rt->res.x;
+	rt->r.y = rt->res.y;
 	mlx_get_screen_size(rt->mlx, &w, &h);
+//	printf("|1%d|\n",w);
+//	printf("|2%d|\n",h);
+//	printf("|3%d|\n",rt->res.y);
+//	printf("|4%d|",rt->res.x);
+//	if (rt->res.x > w || rt->res.y > h)
+//		error("Resolution > max screen size",rt);
 	rt->res.x > w ? rt->res.x = w : 0;
 	rt->res.y > h ? rt->res.y = h : 0;
 	rt->res.flag = 1;
