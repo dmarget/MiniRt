@@ -30,9 +30,9 @@ static int	ft_check_is_digit(t_mini_rt *rt, char *s)
 
 static int	ft_overflow(int s)
 {
-	if (s >= 2147483647)
+	if (s >= 214748364)
 		return (1);
-	if (s <= -2147483648)
+	if (s <= -214748364)
 		return (1);
 	return (0);
 }
@@ -56,6 +56,8 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		s = s * 10 + str[i] - '0';
+		if (i > 7)
+			break;
 		i++;
 		if (ft_overflow(s))
 			return (s * k);

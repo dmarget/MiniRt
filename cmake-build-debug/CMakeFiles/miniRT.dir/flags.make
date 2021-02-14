@@ -6,5 +6,5 @@ C_FLAGS =  -framework OpenGL -framework Appkit -g -isysroot /Applications/Xcode.
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/dmarget/Downloads/miniRT-new/includes 
+C_INCLUDES = -I/Users/dmarget/n/includes 
 
