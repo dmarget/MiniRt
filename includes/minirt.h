@@ -132,6 +132,7 @@ void				check_cam(t_mini_rt *rt);
 void				check_id_cy(t_mini_rt *rt, t_obj *obj);
 void				ft_parse_pl(char *line, t_mini_rt *rt);
 void				ft_parse_sp(char *line, t_mini_rt *rt);
+char				**ft_split_rt(char const *s, char c, t_mini_rt *rt);
 void				ft_parse_sq(char *line, t_mini_rt *rt);
 void				ft_parse_cy(char *line, t_mini_rt *rt);
 void				ft_parse_tr(char *line, t_mini_rt *rt);

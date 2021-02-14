@@ -87,7 +87,7 @@ int				main(int argc, char **argv)
 	if (!(rt = malloc(sizeof(t_mini_rt))))
 		error("malloc is dead,you a kill him", rt);
 	if (argc == 1 || argc > 3 ||
-		(argc == 3 && ft_strcmp(argv[3], "--save") != 0))
+		((argc == 3 && ft_strcmp(argv[2], "--save") != 1)))
 		error("Invalid number of arguments", rt);
 	if (ft_check_rt(argv[1]) == 1)
 		error("Invalid expansion", rt);
