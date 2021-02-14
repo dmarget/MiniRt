@@ -30,9 +30,9 @@ static int	ft_check_is_digit(t_mini_rt *rt, char *s)
 
 static int	over(int s)
 {
-	if (s >= 2147483647)
+	if (s >= 214748364)
 		return (1);
-	if (s <= -2147483648)
+	if (s <= -214748364)
 		return (1);
 	return (0);
 }
