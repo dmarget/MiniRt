@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug"/>
+				<Option working_dir="/Users/dmarget/MR/MT/work/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug"/>
+				<Option working_dir="/Users/dmarget/MR/MT/work/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug"/>
+				<Option working_dir="/Users/dmarget/MR/MT/work/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="miniRT">
-				<Option output="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/miniRT" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug"/>
+				<Option output="/Users/dmarget/MR/MT/work/cmake-build-debug/miniRT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmarget/MR/MT/work/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/dmarget/Downloads/miniRT-new/includes"/>
+					<Add directory="/Users/dmarget/MR/MT/work/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -52,20 +52,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 miniRT"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 miniRT"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="miniRT/fast">
-				<Option output="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/miniRT" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dmarget/Downloads/miniRT-new/cmake-build-debug"/>
+				<Option output="/Users/dmarget/MR/MT/work/cmake-build-debug/miniRT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmarget/MR/MT/work/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/dmarget/Downloads/miniRT-new/includes"/>
+					<Add directory="/Users/dmarget/MR/MT/work/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -73,86 +73,86 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 miniRT/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 miniRT/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/dmarget/MR/MT/work/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/includes/get_next_line.h">
+		<Unit filename="/Users/dmarget/MR/MT/work/includes/get_next_line.h">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/includes/libft.h">
+		<Unit filename="/Users/dmarget/MR/MT/work/includes/libft.h">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/includes/minirt.h">
+		<Unit filename="/Users/dmarget/MR/MT/work/includes/minirt.h">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/libmlx.dylib">
+		<Unit filename="/Users/dmarget/MR/MT/work/libmlx.dylib">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/bmp.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/bmp.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/cam_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/cam_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/check.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/check.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/color_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/color_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/cylindr.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/cylindr.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/ft_atof.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/ft_atof.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/ft_atoi.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/ft_atoi.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/ft_ssplit.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/ft_ssplit.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/get_next_line.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/get_next_line_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/get_next_line_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/math_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/minirt.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/minirt.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/normal_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/objects.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/objects.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parse_obj.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/parse_obj.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parse_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/parse_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/parser.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/parser.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/put.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/put.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/put_utils.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c">
+		<Unit filename="/Users/dmarget/MR/MT/work/srcs/utils_two.c">
 			<Option target="miniRT"/>
 		</Unit>
-		<Unit filename="/Users/dmarget/Downloads/miniRT-new/CMakeLists.txt">
+		<Unit filename="/Users/dmarget/MR/MT/work/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

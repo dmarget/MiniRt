@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dmarget/Downloads/miniRT-new
+CMAKE_SOURCE_DIR = /Users/dmarget/MR/MT/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dmarget/Downloads/miniRT-new/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dmarget/MR/MT/work/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/miniRT.dir/depend.make
@@ -79,263 +79,263 @@ include CMakeFiles/miniRT.dir/flags.make
 
 CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o: ../srcs/ft_ssplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/ft_ssplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.o   -c /Users/dmarget/MR/MT/work/srcs/ft_ssplit.c
 
 CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/ft_ssplit.c > CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/ft_ssplit.c > CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.i
 
 CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/ft_ssplit.c -o CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/ft_ssplit.c -o CMakeFiles/miniRT.dir/srcs/ft_ssplit.c.s
 
 CMakeFiles/miniRT.dir/srcs/cylindr.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/cylindr.c.o: ../srcs/cylindr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/miniRT.dir/srcs/cylindr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/cylindr.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/cylindr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/miniRT.dir/srcs/cylindr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/cylindr.c.o   -c /Users/dmarget/MR/MT/work/srcs/cylindr.c
 
 CMakeFiles/miniRT.dir/srcs/cylindr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/cylindr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/cylindr.c > CMakeFiles/miniRT.dir/srcs/cylindr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/cylindr.c > CMakeFiles/miniRT.dir/srcs/cylindr.c.i
 
 CMakeFiles/miniRT.dir/srcs/cylindr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/cylindr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/cylindr.c -o CMakeFiles/miniRT.dir/srcs/cylindr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/cylindr.c -o CMakeFiles/miniRT.dir/srcs/cylindr.c.s
 
 CMakeFiles/miniRT.dir/srcs/normal_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/normal_utils.c.o: ../srcs/normal_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/miniRT.dir/srcs/normal_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/normal_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/miniRT.dir/srcs/normal_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/normal_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/normal_utils.c
 
 CMakeFiles/miniRT.dir/srcs/normal_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/normal_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c > CMakeFiles/miniRT.dir/srcs/normal_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/normal_utils.c > CMakeFiles/miniRT.dir/srcs/normal_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/normal_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/normal_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/normal_utils.c -o CMakeFiles/miniRT.dir/srcs/normal_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/normal_utils.c -o CMakeFiles/miniRT.dir/srcs/normal_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/get_next_line.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/get_next_line.c.o: ../srcs/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/miniRT.dir/srcs/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/get_next_line.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/miniRT.dir/srcs/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/get_next_line.c.o   -c /Users/dmarget/MR/MT/work/srcs/get_next_line.c
 
 CMakeFiles/miniRT.dir/srcs/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.c > CMakeFiles/miniRT.dir/srcs/get_next_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/get_next_line.c > CMakeFiles/miniRT.dir/srcs/get_next_line.c.i
 
 CMakeFiles/miniRT.dir/srcs/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line.c -o CMakeFiles/miniRT.dir/srcs/get_next_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/get_next_line.c -o CMakeFiles/miniRT.dir/srcs/get_next_line.c.s
 
 CMakeFiles/miniRT.dir/srcs/objects.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/objects.c.o: ../srcs/objects.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/miniRT.dir/srcs/objects.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/objects.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/objects.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/miniRT.dir/srcs/objects.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/objects.c.o   -c /Users/dmarget/MR/MT/work/srcs/objects.c
 
 CMakeFiles/miniRT.dir/srcs/objects.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/objects.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/objects.c > CMakeFiles/miniRT.dir/srcs/objects.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/objects.c > CMakeFiles/miniRT.dir/srcs/objects.c.i
 
 CMakeFiles/miniRT.dir/srcs/objects.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/objects.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/objects.c -o CMakeFiles/miniRT.dir/srcs/objects.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/objects.c -o CMakeFiles/miniRT.dir/srcs/objects.c.s
 
 CMakeFiles/miniRT.dir/srcs/check.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/check.c.o: ../srcs/check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/miniRT.dir/srcs/check.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/check.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/miniRT.dir/srcs/check.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/check.c.o   -c /Users/dmarget/MR/MT/work/srcs/check.c
 
 CMakeFiles/miniRT.dir/srcs/check.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/check.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/check.c > CMakeFiles/miniRT.dir/srcs/check.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/check.c > CMakeFiles/miniRT.dir/srcs/check.c.i
 
 CMakeFiles/miniRT.dir/srcs/check.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/check.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/check.c -o CMakeFiles/miniRT.dir/srcs/check.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/check.c -o CMakeFiles/miniRT.dir/srcs/check.c.s
 
 CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o: ../srcs/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_atoi.c.o   -c /Users/dmarget/MR/MT/work/srcs/ft_atoi.c
 
 CMakeFiles/miniRT.dir/srcs/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/ft_atoi.c > CMakeFiles/miniRT.dir/srcs/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/ft_atoi.c > CMakeFiles/miniRT.dir/srcs/ft_atoi.c.i
 
 CMakeFiles/miniRT.dir/srcs/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/ft_atoi.c -o CMakeFiles/miniRT.dir/srcs/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/ft_atoi.c -o CMakeFiles/miniRT.dir/srcs/ft_atoi.c.s
 
 CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o: ../srcs/get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/get_next_line_utils.c
 
 CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line_utils.c > CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/get_next_line_utils.c > CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/get_next_line_utils.c -o CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/get_next_line_utils.c -o CMakeFiles/miniRT.dir/srcs/get_next_line_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/math_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/math_utils.c.o: ../srcs/math_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/miniRT.dir/srcs/math_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/math_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/miniRT.dir/srcs/math_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/math_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/math_utils.c
 
 CMakeFiles/miniRT.dir/srcs/math_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/math_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c > CMakeFiles/miniRT.dir/srcs/math_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/math_utils.c > CMakeFiles/miniRT.dir/srcs/math_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/math_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/math_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/math_utils.c -o CMakeFiles/miniRT.dir/srcs/math_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/math_utils.c -o CMakeFiles/miniRT.dir/srcs/math_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/bmp.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/bmp.c.o: ../srcs/bmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/miniRT.dir/srcs/bmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/bmp.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/bmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/miniRT.dir/srcs/bmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/bmp.c.o   -c /Users/dmarget/MR/MT/work/srcs/bmp.c
 
 CMakeFiles/miniRT.dir/srcs/bmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/bmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/bmp.c > CMakeFiles/miniRT.dir/srcs/bmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/bmp.c > CMakeFiles/miniRT.dir/srcs/bmp.c.i
 
 CMakeFiles/miniRT.dir/srcs/bmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/bmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/bmp.c -o CMakeFiles/miniRT.dir/srcs/bmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/bmp.c -o CMakeFiles/miniRT.dir/srcs/bmp.c.s
 
 CMakeFiles/miniRT.dir/srcs/ft_atof.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/ft_atof.c.o: ../srcs/ft_atof.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/miniRT.dir/srcs/ft_atof.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_atof.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/ft_atof.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/miniRT.dir/srcs/ft_atof.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/ft_atof.c.o   -c /Users/dmarget/MR/MT/work/srcs/ft_atof.c
 
 CMakeFiles/miniRT.dir/srcs/ft_atof.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/ft_atof.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/ft_atof.c > CMakeFiles/miniRT.dir/srcs/ft_atof.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/ft_atof.c > CMakeFiles/miniRT.dir/srcs/ft_atof.c.i
 
 CMakeFiles/miniRT.dir/srcs/ft_atof.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/ft_atof.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/ft_atof.c -o CMakeFiles/miniRT.dir/srcs/ft_atof.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/ft_atof.c -o CMakeFiles/miniRT.dir/srcs/ft_atof.c.s
 
 CMakeFiles/miniRT.dir/srcs/parser.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/parser.c.o: ../srcs/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/miniRT.dir/srcs/parser.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parser.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/miniRT.dir/srcs/parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parser.c.o   -c /Users/dmarget/MR/MT/work/srcs/parser.c
 
 CMakeFiles/miniRT.dir/srcs/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/parser.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/parser.c > CMakeFiles/miniRT.dir/srcs/parser.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/parser.c > CMakeFiles/miniRT.dir/srcs/parser.c.i
 
 CMakeFiles/miniRT.dir/srcs/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/parser.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/parser.c -o CMakeFiles/miniRT.dir/srcs/parser.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/parser.c -o CMakeFiles/miniRT.dir/srcs/parser.c.s
 
 CMakeFiles/miniRT.dir/srcs/color_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/color_utils.c.o: ../srcs/color_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/miniRT.dir/srcs/color_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/color_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/color_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/miniRT.dir/srcs/color_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/color_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/color_utils.c
 
 CMakeFiles/miniRT.dir/srcs/color_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/color_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/color_utils.c > CMakeFiles/miniRT.dir/srcs/color_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/color_utils.c > CMakeFiles/miniRT.dir/srcs/color_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/color_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/color_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/color_utils.c -o CMakeFiles/miniRT.dir/srcs/color_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/color_utils.c -o CMakeFiles/miniRT.dir/srcs/color_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/cam_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/cam_utils.c.o: ../srcs/cam_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/miniRT.dir/srcs/cam_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/cam_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/cam_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/miniRT.dir/srcs/cam_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/cam_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/cam_utils.c
 
 CMakeFiles/miniRT.dir/srcs/cam_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/cam_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/cam_utils.c > CMakeFiles/miniRT.dir/srcs/cam_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/cam_utils.c > CMakeFiles/miniRT.dir/srcs/cam_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/cam_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/cam_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/cam_utils.c -o CMakeFiles/miniRT.dir/srcs/cam_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/cam_utils.c -o CMakeFiles/miniRT.dir/srcs/cam_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/put.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/put.c.o: ../srcs/put.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/miniRT.dir/srcs/put.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/put.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/put.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/miniRT.dir/srcs/put.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/put.c.o   -c /Users/dmarget/MR/MT/work/srcs/put.c
 
 CMakeFiles/miniRT.dir/srcs/put.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/put.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/put.c > CMakeFiles/miniRT.dir/srcs/put.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/put.c > CMakeFiles/miniRT.dir/srcs/put.c.i
 
 CMakeFiles/miniRT.dir/srcs/put.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/put.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/put.c -o CMakeFiles/miniRT.dir/srcs/put.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/put.c -o CMakeFiles/miniRT.dir/srcs/put.c.s
 
 CMakeFiles/miniRT.dir/srcs/parse_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/parse_utils.c.o: ../srcs/parse_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/miniRT.dir/srcs/parse_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parse_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/parse_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/miniRT.dir/srcs/parse_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parse_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/parse_utils.c
 
 CMakeFiles/miniRT.dir/srcs/parse_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/parse_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/parse_utils.c > CMakeFiles/miniRT.dir/srcs/parse_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/parse_utils.c > CMakeFiles/miniRT.dir/srcs/parse_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/parse_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/parse_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/parse_utils.c -o CMakeFiles/miniRT.dir/srcs/parse_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/parse_utils.c -o CMakeFiles/miniRT.dir/srcs/parse_utils.c.s
 
 CMakeFiles/miniRT.dir/srcs/parse_obj.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/parse_obj.c.o: ../srcs/parse_obj.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/miniRT.dir/srcs/parse_obj.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parse_obj.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/parse_obj.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/miniRT.dir/srcs/parse_obj.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/parse_obj.c.o   -c /Users/dmarget/MR/MT/work/srcs/parse_obj.c
 
 CMakeFiles/miniRT.dir/srcs/parse_obj.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/parse_obj.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/parse_obj.c > CMakeFiles/miniRT.dir/srcs/parse_obj.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/parse_obj.c > CMakeFiles/miniRT.dir/srcs/parse_obj.c.i
 
 CMakeFiles/miniRT.dir/srcs/parse_obj.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/parse_obj.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/parse_obj.c -o CMakeFiles/miniRT.dir/srcs/parse_obj.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/parse_obj.c -o CMakeFiles/miniRT.dir/srcs/parse_obj.c.s
 
 CMakeFiles/miniRT.dir/srcs/utils_two.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/utils_two.c.o: ../srcs/utils_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/miniRT.dir/srcs/utils_two.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/utils_two.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/miniRT.dir/srcs/utils_two.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/utils_two.c.o   -c /Users/dmarget/MR/MT/work/srcs/utils_two.c
 
 CMakeFiles/miniRT.dir/srcs/utils_two.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/utils_two.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c > CMakeFiles/miniRT.dir/srcs/utils_two.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/utils_two.c > CMakeFiles/miniRT.dir/srcs/utils_two.c.i
 
 CMakeFiles/miniRT.dir/srcs/utils_two.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/utils_two.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/utils_two.c -o CMakeFiles/miniRT.dir/srcs/utils_two.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/utils_two.c -o CMakeFiles/miniRT.dir/srcs/utils_two.c.s
 
 CMakeFiles/miniRT.dir/srcs/minirt.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/minirt.c.o: ../srcs/minirt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/miniRT.dir/srcs/minirt.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/minirt.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/minirt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/miniRT.dir/srcs/minirt.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/minirt.c.o   -c /Users/dmarget/MR/MT/work/srcs/minirt.c
 
 CMakeFiles/miniRT.dir/srcs/minirt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/minirt.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/minirt.c > CMakeFiles/miniRT.dir/srcs/minirt.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/minirt.c > CMakeFiles/miniRT.dir/srcs/minirt.c.i
 
 CMakeFiles/miniRT.dir/srcs/minirt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/minirt.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/minirt.c -o CMakeFiles/miniRT.dir/srcs/minirt.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/minirt.c -o CMakeFiles/miniRT.dir/srcs/minirt.c.s
 
 CMakeFiles/miniRT.dir/srcs/put_utils.c.o: CMakeFiles/miniRT.dir/flags.make
 CMakeFiles/miniRT.dir/srcs/put_utils.c.o: ../srcs/put_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/miniRT.dir/srcs/put_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/put_utils.c.o   -c /Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/miniRT.dir/srcs/put_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/miniRT.dir/srcs/put_utils.c.o   -c /Users/dmarget/MR/MT/work/srcs/put_utils.c
 
 CMakeFiles/miniRT.dir/srcs/put_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/miniRT.dir/srcs/put_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c > CMakeFiles/miniRT.dir/srcs/put_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dmarget/MR/MT/work/srcs/put_utils.c > CMakeFiles/miniRT.dir/srcs/put_utils.c.i
 
 CMakeFiles/miniRT.dir/srcs/put_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/miniRT.dir/srcs/put_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/Downloads/miniRT-new/srcs/put_utils.c -o CMakeFiles/miniRT.dir/srcs/put_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dmarget/MR/MT/work/srcs/put_utils.c -o CMakeFiles/miniRT.dir/srcs/put_utils.c.s
 
 # Object files for target miniRT
 miniRT_OBJECTS = \
@@ -385,9 +385,9 @@ miniRT: CMakeFiles/miniRT.dir/srcs/minirt.c.o
 miniRT: CMakeFiles/miniRT.dir/srcs/put_utils.c.o
 miniRT: CMakeFiles/miniRT.dir/build.make
 miniRT: /Users/dmarget/miniRT/libft/libft.a
-miniRT: ../libmlx.dylib
+miniRT: /Users/dmarget/Downloads/miniRT-new/libmlx.dylib
 miniRT: CMakeFiles/miniRT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable miniRT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable miniRT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/miniRT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -400,6 +400,6 @@ CMakeFiles/miniRT.dir/clean:
 .PHONY : CMakeFiles/miniRT.dir/clean
 
 CMakeFiles/miniRT.dir/depend:
-	cd /Users/dmarget/Downloads/miniRT-new/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dmarget/Downloads/miniRT-new /Users/dmarget/Downloads/miniRT-new /Users/dmarget/Downloads/miniRT-new/cmake-build-debug /Users/dmarget/Downloads/miniRT-new/cmake-build-debug /Users/dmarget/Downloads/miniRT-new/cmake-build-debug/CMakeFiles/miniRT.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dmarget/MR/MT/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dmarget/MR/MT/work /Users/dmarget/MR/MT/work /Users/dmarget/MR/MT/work/cmake-build-debug /Users/dmarget/MR/MT/work/cmake-build-debug /Users/dmarget/MR/MT/work/cmake-build-debug/CMakeFiles/miniRT.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/miniRT.dir/depend
 

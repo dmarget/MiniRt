@@ -21,6 +21,7 @@ SRC     :=  $(addprefix srcs/,      \
             parse_utils.c \
             utils_two.c\
             minirt.c\
+            ft_split_rt.c \
             put_utils.c\
             parse_obj.c)
 HEADER =  include/minirt.h

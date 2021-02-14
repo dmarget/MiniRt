@@ -140,6 +140,7 @@ double				ft_atof_rt(char *str, t_mini_rt *rt);
 t_vec				dot_matrix(t_vec r, t_vec u, t_vec n, t_vec d);
 void				ft_start_parse_rt(char *map, t_mini_rt *rt);
 void				valid(t_mini_rt *rt);
+char				**ft_split_rt(char const *s, char c, t_mini_rt *rt);
 int					ft_strcmp(char *s1, char *s2);
 void				ft_parser_rt(char *line, t_mini_rt *rt);
 void				ft_make_file(t_list **list, int size, t_mini_rt *rt);
