@@ -57,7 +57,7 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 	{
 		s = s * 10 + str[i] - '0';
 		if (i > 7)
-			break;
+			break ;
 		i++;
 		if (ft_overflow(s))
 			return (s * k);

@@ -19,14 +19,14 @@ void		ft_parse_res(char *line, t_mini_rt *rt)
 
 	if (*line == '\0')
 		return ;
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 3)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 3)
 		error("Invalid number argument in resolution", rt);
 	rt->res.x = ft_atoi_rt(rt->split[1], rt);
 	rt->res.y = ft_atoi_rt(rt->split[2], rt);
-	if ((rt->res.x > 16384 ||  rt->res.y > 16384) && rt->flag == 1)
-		error("validateTextureDimensions:1084: failed assertion `MTLTextureDescriptor has height (30000) greater"
+	if ((rt->res.x > 16384 || rt->res.y > 16384) && rt->flag == 1)
+		error("`MTLTextureDescriptor has height (30000) greater"
 		" than the maximum allowed size of 16384.'", rt);
-	if(rt->flag == 0)
+	if (rt->flag == 0)
 	{
 		mlx_get_screen_size(rt->mlx, &w, &h);
 		rt->res.x > w ? rt->res.x = w : 0;
@@ -42,7 +42,7 @@ void		ft_parse_amb(char *line, t_mini_rt *rt)
 {
 	if (*line == '\0')
 		return ;
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 3)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 3)
 		error("Invalid arguments in ambient", rt);
 	rt->amb.range = ft_atof_rt(rt->split[1], rt);
 	if (rt->amb.range < 0 || rt->amb.range > 1)
@@ -63,7 +63,7 @@ void		ft_parse_cam(char *line, t_mini_rt *rt)
 
 	if (!(tmp = malloc(sizeof(t_cam))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in cam", rt);
 	if (*line == '\0')
 		return ;
@@ -87,7 +87,7 @@ void		ft_parse_light(char *line, t_mini_rt *rt)
 
 	if (!(tmp = malloc(sizeof(t_light))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in light", rt);
 	check_arg((rt->line_xyz = ft_split_rt(rt->split[1], ',', rt)), rt);
 	tmp->vec = parse_vec(rt);

@@ -67,6 +67,6 @@ void				ft_lstdelone(t_list *lst, void (*del)(void*));
 void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 double				ft_atof(char *str);
-char				**ft_ssplit(char const *s, char *set);
+char				**ssplit_rt(char const *s, char *set);
 
 #endif

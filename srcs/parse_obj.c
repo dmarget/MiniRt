@@ -18,7 +18,7 @@ void		ft_parse_pl(char *line, t_mini_rt *rt)
 
 	if (!(pl = malloc(sizeof(t_obj))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in plane", rt);
 	pl->id = 2;
 	check_arg((rt->line_xyz = ft_split_rt(rt->split[1], ',', rt)), rt);
@@ -44,7 +44,7 @@ void		ft_parse_sp(char *line, t_mini_rt *rt)
 
 	if (!(sp = malloc(sizeof(t_obj))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in sphera", rt);
 	sp->id = 1;
 	check_arg((rt->line_xyz = ft_split_rt(rt->split[1], ',', rt)), rt);
@@ -70,7 +70,7 @@ void		ft_parse_sq(char *line, t_mini_rt *rt)
 
 	if (!(sq = malloc(sizeof(t_obj))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 5)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 5)
 		error("Invalid arguments in square", rt);
 	sq->id = 3;
 	rt->line_xyz = ft_split_rt(rt->split[1], ',', rt);
@@ -98,7 +98,7 @@ void		ft_parse_cy(char *line, t_mini_rt *rt)
 
 	if (!(cy = malloc(sizeof(t_obj))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 6)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 6)
 		error("Invalid arguments in cylinder", rt);
 	cy->id = 4;
 	check_arg((rt->line_xyz = ft_split_rt(rt->split[1], ',', rt)), rt);
@@ -126,7 +126,7 @@ void		ft_parse_tr(char *line, t_mini_rt *rt)
 
 	if (!(tr = malloc(sizeof(t_obj))))
 		error("Malloc is dead,you kill him(", rt);
-	if (check_split(rt->split = ft_ssplit(&line[rt->i], " /t/n/r/v/f")) != 4)
+	if (check_split(rt->split = ssplit_rt(&line[rt->i], " /t/n/r/v/f")) != 4)
 		error("Invalid arguments in triangl", rt);
 	tr->id = 5;
 	check_arg((rt->line_xyz = ft_split_rt(rt->split[0], ',', rt)), rt);
