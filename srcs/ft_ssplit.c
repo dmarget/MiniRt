@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_ssplit.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarget <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -26,7 +26,7 @@ static int		in_s(char c, char *str)
 	return (0);
 }
 
-static size_t	count_words(char const *s, char *set)
+static size_t	c_w(char const *s, char *set)
 {
 	int			count;
 	int			is_word;
@@ -47,22 +47,22 @@ static size_t	count_words(char const *s, char *set)
 	return (count);
 }
 
-static size_t	w_s(char const *s, int pos, char *set)
+static size_t	w_s(char const *s, int p, char *set)
 {
 	size_t		len;
 
 	len = 0;
-	while (s[pos])
+	while (s[p])
 	{
-		if (in_s(s[pos], set))
+		if (in_s(s[p], set))
 			return (len);
 		len++;
-		pos++;
+		p++;
 	}
 	return (len);
 }
 
-char			**ft_ssplit(char const *s, char *set)
+char			**ssplit_rt(char const *s, char *set)
 {
 	char		**tab;
 	int			i;
@@ -72,7 +72,7 @@ char			**ft_ssplit(char const *s, char *set)
 	i = -1;
 	j = 0;
 	k = 0;
-	if (!(tab = malloc(sizeof(char*) * (count_words(s, set) + 1))))
+	if (!(tab = malloc(sizeof(char*) * (c_w(s, set) + 1))))
 		return (NULL);
 	while (s[++i])
 	{
@@ -87,6 +87,6 @@ char			**ft_ssplit(char const *s, char *set)
 		if ((in_s(s[i], set) && !in_s(s[i + 1], set) && k > 0) && (k = 0) == 0)
 			j++;
 	}
-	tab[count_words(s, set)] = NULL;
+	tab[c_w(s, set)] = NULL;
 	return (tab);
 }

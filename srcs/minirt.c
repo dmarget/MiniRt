@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minirt.h                                           :+:      :+:    :+:   */
+/*   minirt.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarget <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -85,9 +85,9 @@ int				main(int argc, char **argv)
 	t_mini_rt	*rt;
 
 	if (!(rt = malloc(sizeof(t_mini_rt))))
-		error("malloc is dead,you are kill him", rt);
+		error("malloc is dead,you a kill him", rt);
 	if (argc == 1 || argc > 3 ||
-			((argc == 3 && ft_strcmp(argv[2], "--save") != 1)))
+		((argc == 3 && ft_strcmp(argv[2], "--save") != 1)))
 		error("Invalid number of arguments", rt);
 	if (ft_check_rt(argv[1]) == 1)
 		error("Invalid expansion", rt);

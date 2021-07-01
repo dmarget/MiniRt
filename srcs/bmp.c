@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minirt.h                                           :+:      :+:    :+:   */
+/*   bmp.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarget <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -20,7 +20,7 @@ static	void		transfer(int n, unsigned char *src)
 	src[3] = (unsigned char)(n >> 24);
 }
 
-static	void		header(t_mini_rt *all, int file_size, int fd)
+static	void		bmp_hdr(t_mini_rt *all, int file_size, int fd)
 {
 	unsigned char	btr[54];
 
@@ -68,7 +68,7 @@ void				save(t_mini_rt *all)
 	if (!(fd = open("screen.bmp", O_WRONLY | O_CREAT
 		| O_TRUNC | O_APPEND, 0666)))
 		error("bad open", all);
-	header(all, limb, fd);
+	bmp_hdr(all, limb, fd);
 	get_pxl(all, fd);
 	close(fd);
 	exit(0);

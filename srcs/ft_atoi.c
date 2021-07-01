@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   atoi.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarget <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -28,7 +28,7 @@ static int	ft_check_is_digit(t_mini_rt *rt, char *s)
 	return (0);
 }
 
-static int	over(int s)
+static int	ft_overflow(int s)
 {
 	if (s >= 214748364)
 		return (1);
@@ -41,7 +41,7 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 {
 	int		i;
 	int		k;
-	long long		s;
+	int		s;
 
 	s = 0;
 	k = 1;
@@ -57,9 +57,9 @@ int			ft_atoi_rt(char *str, t_mini_rt *rt)
 	{
 		s = s * 10 + str[i] - '0';
 		if (i > 7)
-			break;
+			break ;
 		i++;
-		if (over(s))
+		if (ft_overflow(s))
 			return (s * k);
 	}
 	return (s * k);

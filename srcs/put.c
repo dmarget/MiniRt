@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minirt.h                                           :+:      :+:    :+:   */
+/*   put.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarget <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/05 18:51:03 by dmarget           #+#    #+#             */
-/*   Updated: 2021/01/05 18:51:06 by dmarget          ###   ########.fr       */
+/*   Updated: 2021/07/01 15:38:28 by dmarget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ t_color		light_trace(t_mini_rt *rt, t_vec p, t_obj *obj)
 	}
 	return (rt->color);
 }
+
 int			traceray(t_mini_rt *rt, t_vec cam, t_vec dir)
 {
 	t_list	*tmp;
@@ -109,7 +110,7 @@ void		images_main(t_mini_rt *rt)
 	rt->tmp = rt->list_cam;
 	main_cam(rt);
 	rt->mlx = mlx_init();
-	rt->win = mlx_new_window(rt->mlx, rt->res.x, rt->res.y, "FKMiniRT!");
+	rt->win = mlx_new_window(rt->mlx, rt->res.x, rt->res.y, "MiniRT!");
 	render(rt);
 	if (rt->flag == 1)
 		save(rt);

@@ -1,6 +1,3 @@
-//
-// Created by Duncan Marget on 1/10/21.
-//
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -15,13 +12,13 @@
 
 #include "libft.h"
 
-double  ft_atof(char *str)
+double		ft_atof(char *str)
 {
-	double  res1;
-	double  res2;
-	int     l;
-	int     k;
-	int     i;
+	double	res1;
+	double	res2;
+	int		l;
+	int		k;
+	int		i;
 
 	i = 0;
 	k = 1;
