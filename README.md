@@ -7,8 +7,8 @@ make
 
 ---------------------------
 
-Файл с расширением .rt конфигурационные их свойства описаны в subject.pdf
+Файлы с расширением .rt конфигурационные их свойства описаны в subject.pdf
 
-Map file their configuration properties in subject.pdf
+Map files their configuration properties in subject.pdf
 
 ---------------------------
